@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?> <skin version="0" xmlns="http://xsml.org/ns/0/"> 
+<width>272</width>
+<height>114</height>
+<name>
+MiniTunes</name> <author>
+Lacy Morrow</author> <email>
+gojukebox@gmail.com</email> <homepage>
+http://www.lacymorrow.com</homepage> <comment>
+Mini iTunes skin for Xspf Jukebox.</comment><objects>
+<background image="images/default.png" />
+<object label="playButton" x="52" y="44" scale=".6" color="777777" />
+<object label="prevButton" x="23" y="50" scale=".25" color="777777" />
+<object label="fwdButton" x="77" y="50" scale=".25" color="777777" />
+<object label="shuffleButton" x="126" y="65" scale=".6" color="222222" hoverMessage="Shuffle" /> 
+<object label="repeatButton" x="220" y="65" scale=".6" color="222222" hoverMessage="Repeat" />
+<object label="infoButton" x="98" y="80" size="+8" color="333333" text="i" italic="1" bold="1" hoverMessage="Info" />
+<object label="purchaseButton" x="98" y="6" size="+3" text="$" color="333333" font="Trebuchet MS" hoverMessage="Purchase" />
+<object label="downloadButton" x="160" y="88" size="10" color="222222" text="Download" font="Arial" />
+<object label="timeDisplay" x="176" y="66" size="12" color="333333" font="Arial" />
+<object label="trackDisplay" x="110" y="36" width="140" size="12" color="333333" font="Arial" />
+<object label="volumeDisplay" x="170" y="20" scale=".5" height="10" color="444444" />
+<object label="loadBar" x="130" y="56" width="100" height="3" color="2222222" alpha="25" /> <object label="timeBar" x="130" y="54" width="100" height="7" color="2222222" alpha="50" />
+<text x="158" y="17" size="15" text="a" italic="1" color="333333" hoverMessage="About the Jukebox..." url="http://blog.lacymorrow.com/projects/xspf-jukebox/" />
+<object label="startButton" width="272" height="114" alpha="0" /></objects></skin> 

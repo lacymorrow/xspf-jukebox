@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<skin version="0" xmlns="http://xsml.org/ns/0/"> 
+<width>400</width>
+<height>280</height>
+<name>
+LOfi player with playlist
+</name> 
+<author>
+Lutzifer
+</author> 
+<email>
+lutzifer.o666@gmail.com
+</email> 
+<homepage>
+http://lo.psygamer.net
+</homepage> 
+<comment>
+orangeye skin for Xspf Jukebox.
+</comment>
+<objects>
+<background image="/images/background.jpg" />
+<object label="playButton" x="64" y="16" width="11" height="11" color="666666" />
+<object label="stopButton" x="64" y="49" width="8" height="9" color="3D8D8E" />
+<object label="prevButton" x="33" y="49" width="11" height="9" color="3D8D8E" />
+<object label="fwdButton" x="90" y="49" width="11" height="9" color="3D8D8E" />
+<object label="loadBar" x="112" y="23" width="265" height="11" alpha="80" color="BBBBBB" />
+<object label="timeBar" x="112" y="23" width="265" height="11" alpha="70" color="999999" />
+<object label="trackDisplay" x="114" y="20" width="280" size="10" font="Arial" color="dddddd" align="left" />
+<object label="timeDisplay" x="350" y="20" size="10" font="Arial" color="dddddd" />
+<object label="volumeDisplay" x="380" y="272" width="15" height="12" color="dddddd" />
+<object label="shuffleButton" x="7" y="272" width="20.7" height="11.7" color="dddddd" hoverMessage="Shuffle" /> 
+<object label="repeatButton" x="34" y="273" width="15.7" height="11.7" color="dddddd" hoverMessage="Repeat" /> 
+<object label="infoButton" x="266" y="45" size="-2" color="333333" text="lyrics" font="Arial" hoverMessage="Lyrics &amp; more" />
+<object label="purchaseButton" x="142" y="45" size="-2" color="333333" text="purchase" font="Arial" hoverMessage="Purchase" />
+<object label="downloadButton" x="300" y="45" size="-2" color="333333" text="download" font="Arial" hoverMessage="download individual songs" />
+<object label="scrollupButton" x="391" y="22" width="6" height="6" color="888888" /> 
+<object label="scrolldownButton" x="391" y="31" width="6" height="6" color="888888" /> 
+<object label="scrollButton" x="391.2" y="40" width="6" height="220" color="888888" bgAlpha="0" />
+<object label="imageDisplay" x="19" y="88" width="100" height="100" />
+<object label="videoDisplay" x="19" y="88" width="100" height="100" />
+<playlist x="140" y="72" width="243" height="236" size="10" font="Arial" color="333333" />
+<text x="355" y="270" size="10" text="@" bold="1" color="aaaaaa" hoverMessage="About the Jukebox..." url="/music/skin/about.html" />
+<object label="startButton" width="400" height="270" alpha="0" />
+</objects>
+</skin> 

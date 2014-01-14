@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<skin version="0" xmlns="http://xsml.org/ns/0/"> 
+<width>180</width>
+<height>370</height>
+<name>
+VerticalMiniTunes
+</name> 
+<author>
+Lacy Morrow
+</author> 
+<email>
+gojukebox@gmail.com
+</email> 
+<website>
+http://www.lacymorrow.com
+</website> 
+<objects>
+<background image="images/default.png" />
+
+
+<!--imagebackground -->
+<shape shape="rectangle" width="133.5" height="133.5" x="23" y="111" color="EAEAEA" border="1" borderColor="CCCCCC" alpha="75" />
+<!--playlistbackground -->
+<!-- shape shape="rectangle" width="134" height="90" x="20" y="198" color="FFCC33" border="" borderColor="" alpha="50" / -->
+<!-- scrollbarbackground -->
+<shape shape="rectangle" width="8" height="78" x="166" y="249" color="EAEAEA" border="1" borderColor="666666" alpha="50" />
+
+<!-- imagebackground off due to video -->
+<!-- shape shape="rectangle" width="134" height="136" x="2" y="17.5" color="000000" border="1" borderColor="EAEAEA" / -->
+
+
+<object label="playButton" x="62" y="50" scale=".4" color="777777" />
+<object label="prevButton" x="43" y="52" scale=".25" color="777777" />
+<object label="fwdButton" x="76" y="52" scale=".25" color="777777" />
+<object label="shuffleButton" x="97" y="50" scale=".4" color="222222" hoverMessage="Shuffle" /> 
+<object label="repeatButton" x="127" y="50" scale=".4" color="222222" hoverMessage="Repeat" />
+<object label="volumeDisplay" x="147" y="50" scale=".25" height="10" color="444444" />
+
+<object label="trackDisplay" x="32" y="23" width="118" size="10" color="333333" font="Arial" />
+
+<object label="timeDisplay" x="125" y="73" size="10" color="333333" font="Arial" />
+<object label="loadBar" x="34" y="81" width="85" height="3" color="2222222" alpha="25" /> 
+<object label="timeBar" x="34" y="80" width="85" height="5" color="2222222" alpha="50" />
+
+
+
+<object label="infoButton" x="22" y="44" size="14" color="333333" text="i" italic="1" bold="1" hoverMessage="Info" />
+<object label="purchaseButton" x="98" y="334" size="10" text="$" italic="1" color="333333" font="Trebuchet MS" hoverMessage="Purchase" />
+<object label="downloadButton" x="40" y="334" size="10" bold="1" italic="1" color="333333" font="Arial" text="Save" />
+
+
+
+<object label="scrollupButton" x="168" y="250" width="6" height="6" color="666666" />
+<object label="scrolldownButton" x="168" y="258" width="6" height="6" color="666666" /> 
+<object label="scrollButton" x="168" y="264" width="6" height="62" color="666666" bgAlpha="0" />
+
+
+<object label="imageDisplay" x="25" y="113" width="130" height="130" />
+<object label="videoDisplay" x="25" y="113" width="130" height="130" />
+
+<playlist x="19" y="247" width="140" height="84" size="10" font="Arial" color="000000" />
+
+
+<object label="startButton" width="272" height="114" alpha="0" />
+
+</objects>
+</skin> 

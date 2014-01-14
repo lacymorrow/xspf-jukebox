@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?> <skin version="0" xmlns="http://xsml.org/ns/0/"> 
+<width>80</width>
+<height>80</height>
+<name>
+SquareOne</name> <author>
+Lacy Morrow</author> <email>
+gojukebox@gmail.com</email> <homepage>
+http://www.lacymorrow.com</homepage><objects>
+<background image="images/default.png" />
+<object label="playButton" x="36" y="30" scale=".5" color="777777" />
+<object label="prevButton" x="13" y="35" scale=".2" color="777777" />
+<object label="fwdButton" x="55" y="35" scale=".2" color="777777" />
+<object label="shuffleButton" x="8" y="62" scale=".35" width="12" color="222222" hoverMessage="Shuffle" />
+<object label="infoButton" x="64" y="54" size="+8" color="333333" text="i" italic="1" />
+<object label="startButton" width="80" height="80" alpha="0" /></objects></skin> 

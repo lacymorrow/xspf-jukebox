@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+  <skin version="0" xmlns="http://xsml.org/ns/0/">
+  <width>427</width> 
+  <height>678</height> 
+ <name>
+Winamp
+</name> 
+<email>
+BLUEsoldierotep@yahoo.com
+</email> 
+ <objects>
+  <background image="images/winamp.jpg" shape="rectRounded" />
+  <playlist x="6" y="134" width="407" height="476" selectedColor="ffffff" font="Arial" color="2871e9" /> 
+  <object label="playButton" x="48" y="641" width="11" height="11" color="ffffff" hoverMessage="Play" />
+  <object label="stopButton" x="74" y="643" width="8" height="8" color="ffffff" hoverMessage="Stop" />
+  <object label="prevButton" x="19" y="643" width="10" height="8" color="ffffff" hoverMessage="Previous" /> 
+  <object label="fwdButton" x="98" y="643" width="10" height="8" color="ffffff" hoverMessage="Forward" />  
+  <object label="repeatButton" x="359" y="640" width="13" height="13" color="ffffff" hoverMessage="Repeat" />
+  <object label="shuffleButton" x="335" y="640" width="13" height="13" color="ffffff"  hoverMessage="Shuffle" />
+  <object label="trackDisplay" x="165" y="33" width="242" height="17" size="17" font="Arial" color="2871e9" /> 
+  <object label="loadBar" x="12" y="618" color="010101" width="403" height="6"  /> 
+  <object label="timeBar" x="12" y="618" width="403" height="5" color="2871e9" />  
+  <object label="scrollButton" x="401" y="137" width="8" height="470" color="2871e9" alpha="" bgAlpha="0" /> 
+  <object label="volumeDisplay" x="292" y="78" width="107" height="12" color="2871e9" /> 
+  <object label="timeDisplay" x="21" y="38" size="25" font="Arial" color="ffffff" /> 
+  <object label="startButton" width="427" height="678" alpha="0" /> 
+  </objects>
+  </skin>

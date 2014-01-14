@@ -1,0 +1,30 @@
+
+<?xml version="1.0" encoding="UTF-8" ?>
+  <skin version="0" xmlns="http://xsml.org/ns/0/">
+  <width>250</width>
+  <height>210</height>
+ <name>
+MiniAMPcast by Kevin Fields
+</name>
+<email>
+kamnet@yahoo.com
+</email>
+ <objects>
+  <background image="images/MiniAMPcast.png" shape="rectRounded" />
+  <playlist x="6" y="57" width="224" height="85" selectedColor="ffffff" size="10" font="Arial" color="2871e9" />
+  <object label="playButton" x="48" y="173" width="11" height="11" color="ffffff" hoverMessage="Play" />
+  <object label="stopButton" x="73" y="175" width="8" height="8" color="ffffff" hoverMessage="Stop" />
+  <object label="prevButton" x="19" y="175" width="10" height="8" color="ffffff" hoverMessage="Previous" />
+  <object label="fwdButton" x="98" y="175" width="10" height="8" color="ffffff" hoverMessage="Forward" />
+  <object label="repeatButton" x="200" y="173" width="13" height="13" color="ffffff" hoverMessage="Repeat" />
+  <object label="shuffleButton" x="220" y="173" width="13" height="13" color="ffffff"  hoverMessage="Shuffle" />
+  <object label="trackDisplay" x="10" y="25" width="227" height="12" size="10" font="Arial" color="ffffff" />
+  <object label="loadBar" x="11" y="150" color="010101" width="228" height="5"  />
+  <object label="timeBar" x="11" y="150" width="228" height="5" color="2871e9" />
+  <object label="scrollButton" x="235" y="62" width="10" height="80" color="2871e9" alpha="" bgAlpha="0" />
+  <object label="volumeDisplay" x="192" y="43" width="45" height="8" color="2871e9" />
+  <object label="timeDisplay" x="18" y="40" size="10" font="Arial" color="ffffff" />
+  <object label="startButton" width="250" height="210" alpha="0" />
+  </objects>
+  </skin>
+

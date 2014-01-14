@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?> <skin version="0" xmlns="http://xsml.org/ns/0/"> 
+<width>300</width>
+<height>488</height>
+<name>
+iPod White</name> <author>
+Lacy Morrow</author> <email>
+gojukebox@gmail.com</email> <homepage>
+http://www.lacymorrow.com</homepage> <thumbnail>
+thumb.gif</thumbnail> <screenshot>
+scrnshot.gif</screenshot> <comment>
+iPod skin for the XSPF player. First XSPF player skin.
+width=300 height=488</comment><objects>
+<background image="images/default.png" />
+<object label="playpauseButton" x="132" y="390" scale=".8" color="ffffff" />
+<object label="stopButton" x="128" y="325" scale="1.4" color="111111" alpha="0" hoverMessage="Stop" />
+<object label="prevButton" x="70" y="335" scale=".7" color="ffffff" />
+<object label="fwdButton" x="190" y="335" scale=".7" color="ffffff" />
+<object label="shuffleButton" x="56" y="49" scale=".7" color="222222" hoverMessage="Shuffle" /> 
+<object label="repeatButton" x="35" y="49" scale=".7" color="222222" hoverMessage="Repeat" />
+<object label="infoButton" x="125" y="268" size="+15" color="ffffff" text="Info" font="Trebuchet MS" bold="1" />
+<object label="purchaseButton" x="255" y="190" size="+3" text="$" font="Trebuchet MS" bold="1" hoverMessage="Purchase" />
+<object label="fullTimeDisplay" x="35" y="187" size="15" font="Trebuchet MS" bold="1" />
+<object label="trackDisplay" x="50" y="150" width="200" size="15" font="Trebuchet MS" bold="1" />
+<object label="imageDisplay" x="110" y="60" scale=".7" />
+<object label="loadBar" x="50" y="182" width="200" height="3" /> 
+<shape x="50" y="170" width="198" height="9" shape="rectangle" color="dddddd" /><object label="timeBar" x="50" y="170" width="200" height="10" color="2222222" />
+<object label="volumeDisplay" x="226" y="50" width="40" height="18" color="222222" />
+<object label="videoDisplay" x="29" y="47" width="240" height="162" />
+<text x="30" y="30" size="12" text="About..." font="Trebuchet MS" bold="1" hoverMessage="About the Jukebox..." url="http://blog.lacymorrow.com/projects/xspf-jukebox/" />
+<object label="startButton" width="300" height="488" alpha="0" /></objects></skin> 

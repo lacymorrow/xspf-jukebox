@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<skin version="0" xmlns="http://xsml.org/ns/0/"> 
+<width>235</width>
+<height>245</height>
+<name>
+Sony Walkman
+</name> 
+<author>
+Aurora Grajeda
+</author> 
+<email>
+cihuamexica@gmail.com
+</email> 
+<website>
+http://elrinconcitodeaurora.blogspot.com
+</website> 
+<objects>
+<background image="images/sony-walkman.gif" />
+<object label="playButton" x="50" y="114" scale=".2" color="66FFFF" hoverMessage="Play" />
+<object label="stopButton" x="80" y="114" scale=".2" color="66FFFF" hoverMessage="Stop" />
+<object label="prevButton" x="22" y="114" scale=".2" color="66FFFF" hoverMessage="Previous" />
+<object label="fwdButton" x="110" y="114" scale=".2" color="66FFFF" hoverMessage="Next" />
+<object label="shuffleButton" x="165" y="179" scale=".3" color="666666" bold="3" hoverMessage="Shuffle" /> 
+<object label="repeatButton" x="190" y="179" scale=".3" color="666666" bold="3" hoverMessage="Repeat" />
+<object label="infoButton" x="109" y="186" size="8" color="666666" text="Info" font="Trebuchet MS" bold="1" hoverMessage="Info" />
+<object label="purchaseButton" x="251" y="50" color="db951c" size="+15" text="$" font="Trebuchet MS" bold="1" hoverMessage="Purchase" />
+<object label="fullTimeDisplay" x="46" y="205" size="10" font="Arial" bold="3" color="666666" />
+<object label="trackDisplay" x="2" y="215" width="230" size="10" font="Arial" bold="3" color="666666" />
+<object label="timeBar" x="15" y="121" width="105" height=".5" color="FFFFFF" />
+<object label="loadBar" x="15" y="121" width="105" height=".5" color="99FFFF" /> 
+<object label="volumeDisplay" x="118" y="175" width="40" height="13" bold="2" color="666666" />
+
+<object label="scrollupButton" x="225" y="45" width="6" height="6" bold="2" color="66FFFF" hoverMessage="ScrollUp" />
+<object label="scrolldownButton" x="225" y="53" width="6" height="6" bold="2" color="66FFFF" hoverMessage="ScrollDown" /> 
+<object label="scrollButton" x="225" y="61" width="6" height="105" bold="2" color="66FFFF" bgAlpha="0" hoverMessage="Scroll" />
+
+<object label="imageDisplay" x="21" y="24" width="90" height="90" />
+<object label="videoDisplay" x="21" y="24" width="90" height="90" />
+
+<text x="4" y="186" size="8" text="About..." font="Trebuchet MS" bold="2" color="666666" hoverMessage="About the Jukebox..." url="http://www.lacymorrow.com/projects/xspf-jukebox/" />
+<object label="startButton" width="235" height="245" alpha="0" />
+<playlist x="134" y="45" width="90" height="125" size="10" font="Arial" bold="2" color="666666" />
+</objects>
+</skin> 

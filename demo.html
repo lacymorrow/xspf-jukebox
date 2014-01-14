@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>Xspf Jukebox</title>
+  
+  <!-- Included CSS Files (Uncompressed) -->
+  <!--
+  <link rel="stylesheet" href="stylesheets/foundation.css">
+  -->
+  
+  <!-- Included CSS Files (Compressed) -->
+  <link rel="stylesheet" href="http://www.lacymorrow.com/projects/xspf/stylesheets/foundation.min.css">
+  <link rel="stylesheet" href="http://www.lacymorrow.com/projects/xspf/stylesheets/app.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+  <script src="http://www.lacymorrow.com/projects/xspf/javascripts/modernizr.foundation.js"></script>
+</head>
+<body>
+  <?php include('http://www.lacymorrow.com/javascripts/menu.php'); ?>
+  <div class="row">
+    <div class="twelve columns centered">
+      <div id="title">
+        <h2>XSPF JUKEBOX</h2>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="twelve columns">
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" class="right">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="3NPPCRZ4WSZCA">
+        <input type="submit" class="right medium button success" value="Donate &raquo;" />
+        <!-- <input type="image" src="http://www.lacymorrow.com/donate/donate.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"> -->
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+      <h4 class="subheader">A fully skinnable, cutomizeable flash media player &mdash; by <a href="http://www.lacymorrow.com/">Lacy Morrow</a></h4>
+      <p>This version <strong>5.9.5</strong> was last updated April 26, 2009. <span class="right">This is Flash and <strong>will not</strong> work on your iDevice.</span></p>
+      <hr />
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="twelve columns">
+      <h3 class="pink"><span class="subheader">Current skin: </span>iTunes<a href="http://www.lacymorrow.com/projects/xspf?s=shuffle" class="right small button rounded">Random Skin</a></h3>
+      <div style="width:700px;margin:0 auto;">
+        <div id="xspfJukebox">
+    			<a href="http://www.adobe.com/go/getflashplayer">
+    				<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+    			</a>
+    		</div>
+      </div>
+      <hr />
+    </div>
+  </div>
+  <div class="row">
+    <div class="six columns">
+      <h3>Description</h3>
+      <p>The XSPF Jukebox is a fully skinnable Flash media player. Based on my revisions of Fabricio Zuardi&rsquo;s original creation. A full featured media player, the Jukebox supports both mp3 audio and flv video parsed through an external .XSPF or .XML playlist. Custom skins combined with auto&ndash;resume and many customizable options make the XSPF Jukebox a solid choice for a Flash&ndash;based media player.</p>
+      <h5>Javascript Controls</h5>
+		<ul class="square">
+			<div class="row collapse">
+				<div class="six columns">
+					<li><a href="javascript:window.document.xspfJukebox.playTrack();">playTrack();</a></li>
+					<li><a href="javascript:window.document.xspfJukebox.stopTrack();">stopTrack();</a></li>
+					<li><a href="javascript:window.document.xspfJukebox.prevTrack();">prevTrack();</a></li>
+					<li><a href="javascript:window.document.xspfJukebox.nextTrack();">nextTrack();</a></li>
+				</div>
+				<div class="six columns">					
+					<li><a href="javascript:window.document.xspfJukebox.shuffleToggle();">shuffleToggle();</a></li>
+					<li><a href="javascript:window.document.xspfJukebox.repeatToggle();">repeatToggle();</a></li>
+					<li><a href="javascript:window.document.xspfJukebox.gotoTrack(9);">gotoTrack(9);</a></li>
+				</div>
+			</div>
+		</ul>
+
+    </div>
+    <div class="six columns">
+      <h3>Features</h3>
+        <ul class="square">
+          <li>Full Skin Customization</li>
+          <li>Auto&ndash;resume when user switches pages</li>
+          <li>Supports .mp3 audio and .flv video</li>
+          <li>Playlist an single&ndash;track support</li>
+          <li>Shuffle/Repeat</li>
+          <li>Playlist Cacheing</li>
+          <li>Many customizeable options</li>
+          <li>ID3 track meta infomation support</li>
+          <li>Tiny imprint &mdash; only 20Kb!</li>
+          <li>Ability to log player usage information</li>
+          <li>Javascript API</li>
+          <li>Includes modified xplay.php to generate playlist automatically</li>
+    </div>
+    </div>
+  </div>   
+ 
+  <div class="row">
+    <div class="twelve columns">
+      <hr />
+      <h1>Documentation</h1><br />
+      
+      <h4>Easy&ndash;Install</h4>
+      <h5>1. Copy all of the player files to your server. Edit the first line of the xplay.php file to point to your media directory:<h5>
+      <p>
+        <code>
+          $media = &quot;media&quot;;
+        </code><br />
+        Edit any options you wish, playlist cacheing is turned on by default.
+      </p>
+      
+      <h5>2. Include the <a href="http://code.google.com/p/swfobject/" target="_blank">SWFObject</a> javascript code into your page &lt;head&gt;:<h5>
+      <p><code>
+          &lt;script type=&quot;text/javascript&quot; src=&quot;http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js&quot;&gt;&lt;/script&gt;
+      </code></p>
+      
+      <h5>3. Create a &lt;div&gt; to hold your content:<h5>
+      <p>
+        <code>
+          &lt;div id="flashcontent"&gt;<br />
+          &nbsp;&nbsp;&lt;!&ndash;&ndash; Anything here will be replaced by flash content &ndash;&ndash;&gt;<br />
+          &lt;/div&gt;
+        </code>
+      </p>
+      
+      <h5>4. Invoke the player via javascript:<h5>
+      <p>
+        <code>
+          &lt;script&gt;<br />
+          &nbsp;&nbsp;var params = {};<br />
+          &nbsp;&nbsp;params.wmode=&quot;transparent&quot;;<br /> 
+          &nbsp;&nbsp;params.allowscriptaccess=&quot;always&quot;;<br />
+          &nbsp;&nbsp;swfobject.embedSWF(&quot;xspf_jukebox.swf?playlist_url=<span class="pink">xplay.php</span>&amp;skin_url=<span class="pink">skins/iTunes
+          [&amp;param1=value&amp;param2=value...]</span>&quot;,&quot;<span class="pink">flashcontent</span>&quot;, &quot;<span class="pink">skin width</span>&quot;, &quot;<span class="pink">skin height</span>&quot;, &quot;7.0.0&quot;, &quot;&quot;, {}, params, {});<br />
+          &lt;/script&gt;
+        </code>
+      </p>
+      <p>Notice the values highlighted above, you must specify valid file paths for both the playlist_url and skin_url as well as the skin width and height. You may also specify any of the optional parameters following the playlist_url.<br />
+        The entire url for the .swf on this page is:<br />
+        <code>xspf_jukebox.swf?playlist_url=xplay.php&amp;skin_url=skins/iTunes<br />
+        &amp;autoplay=true&amp;alphabetize=true&amp;autoload=true&amp;autoresume=true<br />
+        &amp;main_image=images/artwork.jpg&amp;shuffle=true&amp;statsurl=stats.php</code>
+      </p>
+      <h5>That&rsquo;s it! The XSPF Jukebox is now installed.
+      <br />
+      
+      <h5>Single track mode</h5>
+      <p>You can also use the Jukebox to play a single .mp3 or .flv file, using the following two parameters in place of playlist_url:</p>
+      <ul class="square">
+        <li><code>track_title</code> : label of track</li>
+        <li><code>track_url</code> : url of track</li>
+      </ul>
+      
+      <hr />
+      
+      <h5>Optional Parameters</h5>
+      <ul class="square">
+        <li><code>playlist_url</code> : the url of the xspf file to load</li>
+        <li><code>skin_url</code> : url of the skin folder</li>
+        <li><code>loadurl</code> : url linking to a text file containing all variables. cuts down on html coding and file sizes, one file can be used by many players</li>
+        <li><code>activeDownload</code> : boolean value to allow or disallow direct downloads of tracks, default is false</li>
+        <li><code>alphabetize</code> : boolean value to alphabetize playlist, default is false</li>
+        <li><code>autoload</code> : boolean value that makes the playlist load without the initial user click, default is false</li>
+        <li><code>autoplay</code> : boolean value that makes the playlist load and the music start without the initial user click, default is false</li>
+        <li><code>autoresume</code> : boolean value that allows players on multiple pages to seamlessly continue music as a user browses pages, default is false</li>
+        <li><code>buffer</code> : seconds to preload video before playing, exclude for automatic</li>
+        <li><code>crossFade</code> : either a boolean value, which when true is set to the default time, or the number of seconds to fade (1-12), default is 6 seconds</li>
+        <li><code>forceAlphabetize</code> : boolean value, forces full alphabetizing, including preceding 'the' in artist title, default is false</li>
+        <li><code>format</code> : text to format track label, use &quot;&ndash;creator, &quot;&ndash;title, &quot;&ndash;location, and &quot;&ndash;annotation to insert respective values, default is &quot;&ndash;creator : &ndash;title</li>
+        <li><code>gotoany</code> : boolean value that forces travel to unknown URLs, default is false</li>
+        <li><code>image</code> : url for a jpg image that is shown when autoplay is off</li>
+        <li><code>infourl</code> : global info url for all songs, fills absent playlist info urls</li>
+        <li><code>load_message</code> : message displayed after autoload</li>
+        <li><code>main_image</code> : global image url, fills absent playlist images</li>
+        <li><code>mainurl</code> : right&ndash;click &raquo; &quot;about&quot; url</li>
+        <li><code>midChar</code> : character placed to separate creator and title values for tracks, overwritten by format, default is &quot;:</li>
+        <li><code>no_continue</code> : boolean value to turn off automatic song changing, default is false</li>
+        <li><code>player_title</code> : title text, default is &quot;Xspf Jukebox</li>
+        <li><code>repeat</code> : boolean value to set repeat, default is false</li>
+        <li><code>repeat_playlist</code> : boolean value to repeat the playlist, default is true</li>
+        <li><code>shuffle</code> : boolean value to set shuffle, default is false</li>
+        <li><code>start_track</code> : track number for beginning track, default is 1</li>
+        <li><code>statsurl</code> : url to an external script that can collect POST values. Can collect playSong and annotation</li>
+        <li><code>timedisplay</code> : numerical value to show time counter; 0:off, 1:all, 2:elapsed, 3:duration, 4:countdown</li>
+        <li><code>trackNumber</code> : boolean value that adds track numbers to labels, default is false</li>
+        <li><code>useId3</code> : boolean value that forces id3 tag use, default is false</li>
+        <li><code>volume_level</code> : starting volume level percent, default is 100</li>
+      </ul>
+      <br />
+      <h5>Playlist Format</h5>
+      <p>The XSPF Jukebox uses the <a href="http://xspf.org" target="_blank">XSPF (&lsquo;spiff&rsquo;)</a> open XML playlist format. A brief example follows:</p>
+      <p><code>
+        &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;<br />
+        &lt;playlist version=&quot;0&quot; xmlns=&quot;http://xspf.org/ns/0/&quot;&gt;<br />
+            &nbsp;&nbsp;&lt;trackList&gt;<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;track&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;location&gt;url of .mp3 audio or .flv video file&lt;/location&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;creator&gt;artist or creator of track&lt;/creator&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;title of track&lt;/title&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;annotation&gt;used in place of creator/title if both are absent&lt;/annotation&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;duration&gt;number of milliseconds of track duration&lt;/duration&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;info&gt;url of info link&lt;/info&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;image&gt;url of image, overwrites main_image parameter&lt;/image&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;purchase&gt;url of purchase link&lt;/purchase&gt;<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/track&gt;<br />
+            &nbsp;&nbsp;&lt;/trackList&gt;<br />
+        &lt;/playlist&gt;
+      </code></p>
+      <p>* only &lt;location&gt; is required</p>
+      <br />
+      
+      <h5>Javascript API</h5>
+      <p>A javascript interface has been added into the player to allow for extended control over the Jukebox. This feature only applies to the Flash 8 version.<br />Available functions are:</p>
+      <ul class="square">
+        <li><code>playTrack()</code> : play/pause the track</li>
+        <li><code>stopTrack()</code> : stop the track</li>
+        <li><code>nextTrack()</code> : advance to the next track</li>
+        <li><code>prevTrack()</code> : go back to the previous track</li>
+        <li><code>shuffleToggle()</code> : turn shuffle on/off</li>
+        <li><code>repeatToggle()</code> : turn repeat on/off</li>
+        <li><code>gotoTrack(track number)</code> : play a specified track</li>
+        <li><code>addTrack(track id, location, title, creator, info url, purchase url, image, annotation)</code> : add a track to the playlist</li>
+      </ul>
+      <p>To control the Jukebox using Javascript, make sure that you have an id set in the object and embed tags for the embed script. To call a function, use the format: <br /><code>window.document.flashObject.playTrack();</code><br />For example:<br /><code>&lt;a href=&quot;javascript:window.document.flashObjec.playTrack();&quot;&gt;Click to Play &lt;/a&gt;</code></p><br />
+      <hr />
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="twelve columns">
+      <h1>Skin Documentation</h1>
+      <p>The XSPF Jukebox uses a custom XML format to specify the player appearance. The skin.xml files are in the following format:</p>          
+      <p>
+        <code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</code><br />
+        <code>&lt;skin version=&quot;0&quot; xmlns=&quot;http://xsml.org/ns/0/&quot;&gt;</code><br />
+        <code>&nbsp;&nbsp;&lt;name&gt;skin name&lt;/name&gt;</code><br />
+				<code>&nbsp;&nbsp;&lt;width&gt;skin width&lt;/width&gt;</code><br />
+				<code>&nbsp;&nbsp;&lt;height&gt;skin height&lt;/height&gt;</code><br />
+        <code>&nbsp;&nbsp;&lt;author&gt;skin author&lt;/author&gt;</code><br />
+        <code>&nbsp;&nbsp;&lt;email&gt;author?s email&lt;/email&gt;</code><br />
+        <code>&nbsp;&nbsp;&lt;website&gt;author?s website&lt;/website&gt;</code><br />
+        <code>&nbsp;&nbsp;&lt;comment&gt;author?s comments&lt;/comment&gt;</code><br />
+        <code>&nbsp;&nbsp;&lt;object&gt;</code><br />
+        <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; all skin objects reside between the &lt;object&gt; tags</code><br />
+        <code>&nbsp;&nbsp;&lt;/object&gt;</code><br />
+        <code>&lt;/skin&gt;</code><br />
+      </p>
+      <br />
+      
+      <h5>Skin Objects</h5>
+      <ul class="square">
+        <li><code>&lt;background x=&quot;&quot; y=&quot;&quot; width=&quot;&quot; height=&quot;&quot; scale=&quot;&quot; image=&quot;&quot; shape=&quot;&quot; border=&quot;&quot; color=&quot;&quot; borderColor=&quot;&quot; alpha=&quot;&quot; /&gt;</code></li>
+        <li><code>&lt;image <span style="line-height: 20px; " class="style_4">x=&quot;&quot; y=&quot;&quot; z=&quot;&quot; width=&quot;&quot; height=&quot;&quot; image=&quot;&quot; alpha=&quot;&quot; url=&quot;&quot; target=&quot;&quot; hoverMessage=&quot;&quot; </span>/&gt;</code></li>
+        <li><code>&lt;shape <span style="line-height: 20px; " class="style_4">x=&quot;&quot; y=&quot;&quot; z=&quot;&quot; width=&quot;&quot; height=&quot;&quot; shape=&quot;&quot; border=&quot;&quot; color=&quot;&quot; borderColor=&quot;&quot; alpha=&quot;&quot; url=&quot;&quot; target=&quot;&quot; hoverMessage=&quot;&quot; </span>/&gt;</code></li>
+        <li><code>&lt;text <span style="line-height: 20px; " class="style_4">x=&quot;&quot; y=&quot;&quot; z=&quot;&quot; size=&quot;&quot; color=&quot;&quot; font=&quot;&quot; text=&quot;&quot; border=&quot;&quot; bold=&quot;&quot; italic=&quot;&quot; underline=&quot;&quot; alpha=&quot;&quot; url=&quot;&quot; target=&quot;&quot; hoverMessage=&quot;&quot; </span>/&gt;</code></li>
+        <li><code>&lt;playlist <span style="line-height: 20px; " class="style_4">x=&quot;&quot; y=&quot;&quot; z=&quot;&quot; width=&quot;&quot; height=&quot;&quot; size=&quot;&quot; color=&quot;&quot; font=&quot;&quot; selectedColor=&quot;&quot; bold=&quot;&quot; italic=&quot;&quot; underline=&quot;&quot; alpha=&quot;&quot; hoverMessage=&quot;&quot; </span>/&gt;</code></li>
+        <li><code>&lt;badge <span style="line-height: 20px; " class="style_4">x=&quot;&quot; y=&quot;&quot; width=&quot;&quot; height=&quot;&quot; </span>/&gt;</code></li>
+      </ul>
+      <br />
+
+          
+      <h5>Function Objects</h5>
+      <p>All function objects begin with an &lt;object&gt; tag, and are distinguished through a <code>label</code> attribute. Most labels have similar attributes, but there are some slight differences.</p>
+      <ul class="square">
+        <li><code>&lt;object label=&quot;playButton&quot; x=&quot;&quot; y=&quot;&quot; z=&quot;&quot; width=&quot;&quot; height=&quot;&quot; scale=&quot;&quot; image=&quot;&quot; color=&quot;&quot; alpha=&quot;&quot; hoverMessage=&quot;&quot; /&gt;</code></li>
+        <li><code>&lt;object label=&quot;playpauseButton&quot; x=&quot;&quot; y=&quot;&quot; z=&quot;&quot; width=&quot;&quot; height=&quot;&quot; scale=&quot;&quot; image=&quot;&quot; color=&quot;&quot; alpha=&quot;&quot; hoverMessage=&quot;&quot; /&gt;</code></li>
+        <li><code>&lt;object label=&quot;stopButton&quot; x=&quot;&quot; y=&quot;&quot; z=&quot;&quot; width=&quot;&quot; height=&quot;&quot; scale=&quot;&quot; image=&quot;&quot; color=&quot;&quot; alpha=&quot;&quot; hoverMessage=&quot;&quot; /&gt;</code></li>
+        <li><code>&lt;object label=&quot;prevButton&quot; x=&quot;&quot; y=&quot;&quot; z=&quot;&quot; width=&quot;&quot; height=&quot;&quot; scale=&quot;&quot; image=&quot;&quot; color=&quot;&quot; alpha=&quot;&quot; hoverMessage=&quot;&quot; /&gt;</code></li>
+        <li><code>&lt;object label=&quot;fwdButton&quot; x=&quot;&quot; y=&quot;&quot; z=&quot;&quot; width=&quot;&quot; height=&quot;&quot; scale=&quot;&quot; image=&quot;&quot; color=&quot;&quot; alpha=&quot;&quot; hoverMessage=&quot;&quot; /&gt;</code></li>
+        <li><code>&lt;object label=&quot;shuffleButton&quot; x=&quot;&quot; y=&quot;&quot; z=&quot;&quot; width=&quot;&quot; height=&quot;&quot; scale=&quot;&quot; image=&quot;&quot; color=&quot;&quot; alpha=&quot;&quot; hoverMessage=&quot;&quot; /&gt;</code></li>
+        <li><code>&lt;object label=&quot;repeatButton&quot; x=&quot;&quot; y=&quot;&quot; z=&quot;&quot; width=&quot;&quot; height=&quot;&quot; scale=&quot;&quot; image=&quot;&quot; color=&quot;&quot; alpha=&quot;&quot; hoverMessage=&quot;&quot; /&gt;</code></li>
+        <li><code>&lt;object label=&quot;scrollButton&quot; x=&quot;&quot; y=&quot;&quot; z=&quot;&quot; width=&quot;&quot; height=&quot;&quot; scale=&quot;&quot; image=&quot;&quot; color=&quot;&quot; bgColor=&quot;&quot; alpha=&quot;&quot; bgAlpha=&quot;&quot; hoverMessage=&quot;&quot; /&gt;</code></li>
+        <li><code>&lt;object label=&quot;scrollupButton&quot; x=&quot;&quot; y=&quot;&quot; z=&quot;&quot; width=&quot;&quot; height=&quot;&quot; scale=&quot;&quot; image=&quot;&quot; color=&quot;&quot; alpha=&quot;&quot; hoverMessage=&quot;&quot; /&gt;</code></li>
+        <li><code>&lt;object label=&quot;scrolldownButton&quot; x=&quot;&quot; y=&quot;&quot; z=&quot;&quot; width=&quot;&quot; height=&quot;&quot; scale=&quot;&quot; image=&quot;&quot; color=&quot;&quot; alpha=&quot;&quot; hoverMessage=&quot;&quot; /&gt;</code></li>
+        <li><code>&lt;object label=&quot;startButton&quot; x=&quot;&quot; y=&quot;&quot; z=&quot;&quot; width=&quot;&quot; height=&quot;&quot; scale=&quot;&quot; color=&quot;&quot; alpha=&quot;&quot; hoverMessage=&quot;&quot; /&gt;</code></li>
+        <li><code>&lt;object label=&quot;infoButton&quot; x=&quot;&quot; y=&quot;&quot; z=&quot;&quot; size=&quot;&quot; color=&quot;&quot; font=&quot;&quot; text=&quot;&quot; bold=&quot;&quot; italic=&quot;&quot; underline=&quot;&quot; target=&quot;&quot; hoverMessage=&quot;&quot; /&gt;</code></li>
+        <li><code>&lt;object label=&quot;purchaseButton&quot; x=&quot;&quot; y=&quot;&quot; z=&quot;&quot; size=&quot;&quot; color=&quot;&quot; font=&quot;&quot; text=&quot;&quot; bold=&quot;&quot; italic=&quot;&quot; underline=&quot;&quot; target=&quot;&quot; hoverMessage=&quot;&quot; /&gt;</code></li>
+        <li><code>&lt;object label=&quot;downloadButton&quot; x=&quot;&quot; y=&quot;&quot; z=&quot;&quot; size=&quot;&quot; color=&quot;&quot; font=&quot;&quot; text=&quot;&quot; bold=&quot;&quot; italic=&quot;&quot; underline=&quot;&quot; target=&quot;&quot; hoverMessage=&quot;&quot; /&gt;</code></li>
+        <li><code>&lt;object label=&quot;playDisplay&quot; x=&quot;&quot; y=&quot;&quot; z=&quot;&quot; width=&quot;&quot; height=&quot;&quot; scale=&quot;&quot; color=&quot;&quot; alpha=&quot;&quot; hoverMessage=&quot;&quot; /&gt;</code></li>
+        <li><code>&lt;object label=&quot;imageDisplay&quot; x=&quot;&quot; y=&quot;&quot; z=&quot;&quot; width=&quot;&quot; height=&quot;&quot; scale=&quot;&quot; color=&quot;&quot; alpha=&quot;&quot; hoverMessage=&quot;&quot; /&gt;</code></li>
+        <li><code>&lt;object label=&quot;videoDisplay&quot; x=&quot;&quot; y=&quot;&quot; z=&quot;&quot; width=&quot;&quot; height=&quot;&quot; scale=&quot;&quot; alpha=&quot;&quot; hoverMessage=&quot;&quot; /&gt;</code></li>
+        <li><code>&lt;object label=&quot;trackDisplay&quot; x=&quot;&quot; y=&quot;&quot; z=&quot;&quot; width=&quot;&quot; size=&quot;&quot; color=&quot;&quot; font=&quot;&quot; text=&quot;&quot; align=&quot;&quot; bold=&quot;&quot; italic=&quot;&quot; underline=&quot;&quot; hoverMessage=&quot;&quot; /&gt;</code></li>
+        <li><code>&lt;object label=&quot;timeDisplay&quot; x=&quot;&quot; y=&quot;&quot; z=&quot;&quot; size=&quot;&quot; color=&quot;&quot; font=&quot;&quot; text=&quot;&quot; bold=&quot;&quot; italic=&quot;&quot; underline=&quot;&quot; hoverMessage=&quot;&quot; /&gt;</code></li>
+        <li><code>&lt;object label=&quot;fulltimeDisplay&quot; x=&quot;&quot; y=&quot;&quot; z=&quot;&quot; size=&quot;&quot; color=&quot;&quot; font=&quot;&quot; text=&quot;&quot; bold=&quot;&quot; italic=&quot;&quot; underline=&quot;&quot; hoverMessage=&quot;&quot; /&gt;</code></li>
+        <li><code>&lt;object label=&quot;volumeDisplay&quot; x=&quot;&quot; y=&quot;&quot; z=&quot;&quot; width=&quot;&quot; height=&quot;&quot; scale=&quot;&quot; image=&quot;&quot; color=&quot;&quot; alpha=&quot;&quot; hoverMessage=&quot;&quot; /&gt;</code></li>
+        <li><code>&lt;object label=&quot;timeBar&quot; x=&quot;&quot; y=&quot;&quot; z=&quot;&quot; width=&quot;&quot; height=&quot;&quot; scale=&quot;&quot; image=&quot;&quot; color=&quot;&quot; alpha=&quot;&quot; hoverMessage=&quot;&quot; /&gt;</code></li>
+        <li><code>&lt;object label=&quot;loadBar&quot; x=&quot;&quot; y=&quot;&quot; z=&quot;&quot; width=&quot;&quot; height=&quot;&quot; scale=&quot;&quot; image=&quot;&quot; color=&quot;&quot; alpha=&quot;&quot; hoverMessage=&quot;&quot; /&gt;</code></li>
+      </ul>
+      <br />
+  
+      <h5>Labels</h5>
+      <ul class="square">
+        <li><code>playButton</code> : a play button, toggles between play and pause</li>
+        <li><code>playpauseButton</code> : a static play pause button, toggles between play and pause</li>
+        <li><code>stopButton</code> : a stop button, stops the track</li>
+        <li><code>prevButton</code> : a previous button, changes to the previous track</li>
+        <li><code>fwdButton</code> : a forward button, changes to the next track</li>
+        <li><code>shuffleButton</code> : a shuffle button, toggles on/off</li>
+        <li><code>repeatButton</code> : a repeat button, toggles on/off</li>
+        <li><code>scrollButton</code> : a scroll button with background, scrolls playlist</li>
+        <li><code>scrollupButton</code> : an up arrow, scrolls playlist up</li>
+        <li><code>scrolldownButton</code> : a down arrow, scrolls playlist down</li>
+        <li><code>startButton</code> : a rectangle to indicate click location to start load or play, set alpha to 0</li>
+        <li><code>infoButton</code> : text button to follow the current info link in a playlist</li>
+        <li><code>purchaseButton</code> : text button to follow the current purchase link in a playlist</li>
+        <li><code>downloadButton</code> : text button to directly link to the currently playing mp3</li>
+        <li><code>playDisplay</code> : displays current track images</li>
+        <li><code>imageDisplay</code> : displays current track images</li>
+        <li><code>videoDisplay</code> : displays video tracks</li>
+        <li><code>trackDisplay</code> : displays currently playing track</li>
+        <li><code>timeDisplay</code> : displays current track time in a standard format ?00:00?, toggles between time, duration, and time remaining</li>
+        <li><code>fulltimeDisplay</code> : displays current track time in a full format ?00:00/00:00?, displays time and duration</li>
+        <li><code>volumeDisplay</code> : displays a volume bar to change track volume</li>
+        <li><code>timeBar</code> : displays current track percentage in bar form, click to scan track</li>
+        <li><code>loadBar</code> : displays loaded percentage for the current track in bar form</li>
+      </ul>
+
+      <h5>Attributes</h5>
+      <ul class="square">
+        <li><code>x</code> : number : the x value or percentage for placing an object</li>
+        <li><code>y</code> : number : the y value or percentage for placing an object</li>
+        <li><code>z</code> : number : the z value, or depth of an object.</li>
+        <li><code>width</code> : number : the width of an object</li>
+        <li><code>height</code> : number : the height of an object</li>
+        <li><code>scale</code> : number : used in place of width/height. scales the object while retaining default aspect ratio. 1 equals no scale</li>
+        <li><code>size</code> : number : font size. size must be preceded by a + for infoButton, purchaseButton, and downloadButton. ex: +15</li>
+        <li><code>image</code> : url : load an image in place of the default symbol</li>
+        <li><code>shape</code> : rectangle/rectRounded/circle/triangle : draws a shape for an object</li>
+        <li><code>border</code> : number : defines a shape?s border width</li>
+        <li><code>color</code> : hex code : sets the color of an object. ex: ff0088</li>
+        <li><code>borderColor</code> : hex code : sets the color of an shape?s border</li>
+        <li><code>bgColor</code> : hex code : sets the color of an object?s background</li>
+        <li><code>selectedColor</code> : hex code : sets the color of the current track in the playlist</li>
+        <li><code>font</code> : font name : sets the text font</li>
+        <li><code>text</code> : text : displayed text</li>
+        <li><code>align</code> : left/center/right : used only for trackDisplay. aligns text</li>
+        <li><code>bold</code> : boolean : sets text bolding on/off</li>
+        <li><code>italic</code> : boolean : sets text italics on/off</li>
+        <li><code>underline</code> : boolean : sets text underline on/off</li>
+        <li><code>alpha</code> : percent : sets alpha channel of object</li>
+        <li><code>bgAlpha</code> : percent : sets alpha channel of an object?s background</li>
+        <li><code>url</code> : url : allows an object to link to a web page</li>
+        <li><code>hoverMessage</code> : text : message displayed on mouse over</li>
+      </ul>
+      <br />
+
+
+    </div>
+  </div>
+  <!-- Included JS Files (Compressed) -->
+  <script src="javascripts/jquery.js"></script>
+  <script src="javascripts/foundation.min.js"></script>
+  
+  <!-- Initialize JS Plugins -->
+  <script src="javascripts/app.js"></script>
+
+  
+    <script>
+       var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-247410-10']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+      var params = {};
+      params.wmode="transparent"; 
+      params.allowscriptaccess="always";        
+      swfobject.embedSWF("xspf_jukebox.swf?playlist_url=http://www.lacymorrow.com/projects/xspf/xplay.php&skin_url=skins/iTunes&autoplay=true&autoload=true&autoresume=true&shuffle=true&statsurl=stats.php", "xspfJukebox", "700", "400", "7.0.0", "", {}, params, {});
+    </script> 
+</body>
+</html>

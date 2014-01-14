@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skin version="0" xmlns="http://xsml.org/ns/0/"> 
+
+  <width>700</width>
+  <height>400</height>
+  <name>mp3music</name>
+  <author>Semko George</author>
+  <email>gsemko@gmail.com</email>
+  <homepage>http://mp3music.com.ua/</homepage>
+
+  <objects>
+    <background image="images/default.png" />
+    <object label="playButton" x="80" y="20" scale=".7" color="FFFFFF" />
+    <object label="prevButton" x="14" y="23" scale=".5" color="AEAEAE" />
+    <object label="fwdButton" x="130" y="23" scale=".5" color="AEAEAE" />
+
+    <object label="shuffleButton" x="584" y="20" scale=".7" color="FFFFFF" hoverMessage="Shuffle" /> 
+    <object label="repeatButton" x="648" y="20" scale=".7" color="FFFFFF" hoverMessage="Repeat" />
+    <object label="volumeDisplay" x="507" y="17" width="53" height="25" color="FFFFFF" />
+
+    <object label="infoButton" x="654" y="360" size="+10" color="FFFFFF" text="i" italic="1" hoverMessage="Info" />
+
+    <object label="trackDisplay" x="186" y="12" width="248" size="16" font="Trebuchet MS" color="FFFFFF" />
+    <object label="loadBar" x="186" y="38" color="4F4F4F" width="248" height="7" />
+    <object label="timeBar" x="188" y="39" color="BEC9CD" width="246" height="5" />
+    <object label="timeDisplay" x="455" y="23"size="14" font="Arial" color="FFFFFF" />
+
+    <object label="scrollupButton" x="678.5" y="63" scale=".5" color="FFFFFF" alpha="80" />
+    <object label="scrolldownButton" x="678.5" y="376" scale=".5" color="FFFFFF" alpha="80" />
+    <object label="scrollButton" x="680.8" y="80" height="291" color="FFFFFF" alpha="80" bgAlpha="0" />
+
+    <object label="imageDisplay" x="515" y="72" width="150" height="148" alpha="80" />
+
+    <playlist x="18" y="70" width="655" height="313" color="FFFFFF" selectedColor="FCAA23" size="14" font="Trebuchet MS" />
+    <object label="startButton" width="700" height="400" alpha="0" />
+  </objects>
+
+</skin> 

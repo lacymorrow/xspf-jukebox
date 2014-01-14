@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<skin version="0" xmlns="http://xsml.org/ns/0/"> 
+<width>400</width>
+<height>15</height>
+<name>
+Original
+</name> 
+<author>
+Lacy Morrow
+</author> 
+<email>
+gojukebox@gmail.com
+</email> 
+<website>
+http://www.lacymorrow.com
+</website> 
+<objects>
+<shape shape="rectangle" width="400" height="15" color="EAEAEA" />
+<object label="playButton" x="19" y="3" width="9" height="9" color="999999" />
+<object label="stopButton" x="32" y="3" width="8" height="9" color="999999" />
+<object label="prevButton" x="3" y="3" width="11" height="9" color="999999" />
+<object label="fwdButton" x="46" y="3" width="11" height="9" color="999999" />
+<object label="loadBar" x="62" y="2" width="335" height="11" alpha="80" color="BBBBBB" />
+<object label="timeBar" x="62" y="2" width="335" height="11" alpha="70" color="999999" />
+<object label="trackDisplay" x="64" y="" width="240" size="9" font="Arial" color="333333" align="left" />
+<object label="timeDisplay" x="330" y="" size="9" font="Arial" color="333333" />
+<object label="volumeDisplay" x="352" y="4" width="15" height="7" color="444444" />
+<object label="shuffleButton" x="370" y="3" width="16" height="10" color="333333" hoverMessage="Shuffle" /> 
+<object label="infoButton" x="389" y="-1" size="-2" color="333333" text="i" font="Arial" bold="1" hoverMessage="Info" />
+<object label="startButton" width="400" height="15" alpha="0" />
+</objects>
+</skin> 

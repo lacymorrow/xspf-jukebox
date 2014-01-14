@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?> <skin version="0" xmlns="http://xsml.org/ns/0/"> 
+<width>600</width>
+<height>337</height>
+<name>
+MiniTunes</name> <author>
+Lacy Morrow</author> 
+<email>
+gojukebox@gmail.com</email> <website>
+http://www.lacymorrow.com</website> <objects>
+<background image="images/default.jpg" />
+<object label="playButton" x="48" y="234" scale=".9" color="555555" />
+<object label="prevButton" x="175" y="255" scale=".35" color="333333" />
+<object label="fwdButton" x="405" y="255" scale=".35" color="333333" />
+<object label="shuffleButton" x="528" y="234" width="35" height="25" color="555555" hoverMessage="Shuffle" /> 
+<object label="infoButton" x="2" y="220" size="+8" color="333333" text="i" italic="1" hoverMessage="Info" />
+<object label="downloadButton" x="10" y="284" size="12" color="222222" text="Download" font="Trebuchet MS" bold="1" />
+<object label="purchaseButton" x="530" y="284" size="12" color="222222" text="Purchase" bold="1" font="Trebuchet MS" />
+<object label="trackDisplay" x="200" y="250" width="200" size="14" font="Trebuchet MS" />
+<object label="loadBar" x="175" y="277" color="222222" alpha="80" width="250" height="3" /> <object label="timeBar" x="175" y="275" width="250" height="7" color="222222" alpha="40" />
+<object label="scrollupButton" x="586" y="4" scale=".4" color="" alpha="80" /> <object label="scrolldownButton" x="586" y="194" scale=".4" color="" alpha="80" /> <object label="scrollButton" x="586.5" y="18" height="172" color="333333" bgAlpha="0" />
+<playlist x="0" y="0" width="570" height="209" selectedColor="444444" font="Trebuchet MS" />
+<object label="videoDisplay" y="0" width="600" height="209" />
+<text x="582" y="220" size="16" text="@" bold="1" color="333333" hoverMessage="About the Jukebox..." url="http://blog.lacymorrow.com/projects/xspf-jukebox/" />
+<object label="startButton" width="600" height="300" alpha="0" /></objects></skin> 

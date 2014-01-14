@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<skin version="0" xmlns="http://xsml.org/ns/0/"> 
+<width>600</width>
+<height>450</height>
+<name>
+Original (Wii mod)
+</name> 
+<author>
+Quinton
+</author> 
+<email>
+qwolfarth@gmail.com
+</email> 
+<notes>
+Original skin for Xspf Jukebox, modified (heavily) to work with the Wii.
+</notes>
+<objects>
+
+<object label="startButton" width="600" height="450" alpha="0" />
+
+<shape shape="rectangle" x="0" y="0" width="600" height="40" color="EAEAEA" />
+<object label="trackDisplay" x="10" y="10" width="420" size="20" font="Arial" color="333333" align="left" />
+<object label="timeDisplay" x="550" y="10" size="20" font="Arial" color="333333" />
+<object label="timeBar" x="5" y="5" width="490" height="30" alpha="70" color="999999" />
+
+<object label="loadBar" x="0" y="43" width="600" height="4" alpha="80" color="BBBBBB" />
+
+<shape shape="rectangle" x="0" y="50" width="550" height="270" color="EAEAEA" />
+<playlist x="10" y="60" width="540" height="250" size="20" font="Arial" color="333333" />
+
+<shape shape="rectangle" x="560" y="50" width="40" height="270" color="EAEAEA" />
+<object label="scrollupButton" x="560" y="50" width="40" height="40" color="888888" /> 
+<object label="scrolldownButton" x="560" y="100" width="40" height="40" color="888888" /> 
+<object label="scrollButton" x="560" y="150" width="40" height="160" color="888888" bgAlpha="0" />
+
+<text x="0" y="400" size="10" text="text goes here" color="333333" hoverMessage="text message" />
+
+<shape shape="rectangle" x="0" y="330" width="470" height="120" color="EAEAEA" />
+<object label="prevButton" x="40" y="340" width="40" height="40" color="999999" />
+<object label="playButton" x="160" y="340" width="40" height="40" color="999999" />
+<object label="stopButton" x="280" y="340" width="40" height="40" color="999999" />
+<object label="fwdButton" x="400" y="340" width="40" height="40" color="999999" />
+<object label="shuffleButton" x="40" y="400" width="40" height="40" color="333333" hoverMessage="Shuffle" /> 
+<object label="repeatButton" x="160" y="400" width="40" height="40" color="333333" hoverMessage="Repeat" /> 
+<object label="volumeDisplay" x="280" y="400" width="170" height="40" color="444444" />
+
+<shape shape="rectangle" x="480" y="330" width="119" height="119" color="EAEAEA" />
+<object label="imageDisplay" x="482" y="332" width="115" height="115" />
+<object label="videoDisplay" x="482" y="332" width="115" height="115" />
+
+<object label="infoButton" x="0" y="0" size="-2" color="333333" text="info" font="Arial" hoverMessage="Info" />
+<object label="purchaseButton" x="0" y="0" size="-2" color="333333" text="purchase" font="Arial" hoverMessage="Purchase" />
+<object label="downloadButton" x="0" y="0" size="-2" color="333333" text="Download" font="Arial" />
+
+</objects>
+</skin> 

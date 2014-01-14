@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<skin version="0" xmlns="http://xsml.org/ns/0/"> 
+<width>720</width>
+<height>480</height>
+<name>
+Boby's Walkmerican
+</name> 
+<author>
+Casey Wilms
+</author> 
+<email>
+funkybooty@gmail.com
+</email> 
+<website>
+http://bobamerica.tv/
+</website>
+<objects>
+<background image="images/BAmp3Player.png"/>
+<object label="playpauseButton" x="131" y="61" scale=".48" color="ffffff" />
+<object label="stopButton" x="255" y="61" scale=".5" color="ffffff" alpha="0" />
+<object label="prevButton" x="64" y="61" scale=".48" color="ffffff" />
+<object label="fwdButton" x="193" y="61" scale=".48" color="ffffff" />
+<object label="shuffleButton" x="208" y="120" scale=".40" color="999999" hoverMessage="Shuffle" /> 
+<object label="repeatButton" x="243" y="120" scale=".40" color="999999" hoverMessage="Repeat" />
+<object label="infoButton" x="125" y="200" size="15" color="ffffff" text="Info" font="Trebuchet MS" bold="1" />
+<object label="scrollButton" x="514" y="50" width="8" height="240" color="ffffff" />
+<object label="purchaseButton" x="539" y="271" size="+3" text="Download on iTunes" color="9b1899" font="Helvetica" bold="2" hoverMessage="Download on iTunes"/>
+<object label="fullTimeDisplay" x="318" y="120" size="10" color="ffffff" font="Trebuchet MS" bold="1" />
+<object label="trackDisplay" x="250" y="95" width="192" size="10" color="ffffff" font="Helvetica" bold="1"/>
+<object label="loadBar" x="270" y="110" width="150" color="999999" height="2"/> 
+<object label="timeBar" x="270" y="114" width="150" height="5" color="fffffff" />
+<object label="volumeDisplay" x="214" y="102" width="34" height="15" color="999999" />
+<playlist x="525" y="50" width="180" height="240" size="12" font="Helvetica" color="ffffff"/>
+<object label="imageDisplay" x="520" y="298" width="191" height="174" />
+<object label="startButton" width="300" height="488" alpha="0" />
+</objects>
+</skin> 

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<skin version="0" xmlns="http://xsml.org/ns/0/"> 
+<width>700</width>
+<height>400</height>
+<name>
+iTunes
+</name> 
+<author>
+Lacy Morrow
+</author> 
+<email>
+gojukebox@gmail.com
+</email> 
+<homepage>
+http://www.lacymorrow.com
+</homepage> 
+<objects>
+<background image="images/default.png" />
+<object label="playButton" x="73" y="34" scale=".7" color="333333" />
+<object label="prevButton" x="30" y="39" scale=".35" color="333333" />
+<object label="fwdButton" x="111" y="39" scale=".35" color="333333" />
+<object label="shuffleButton" x="496" y="34" scale=".8" color="444444" hoverMessage="Shuffle" /> 
+<object label="repeatButton" x="615" y="35" scale=".8" color="444444" hoverMessage="Repeat" />
+<object label="infoButton" x="30" y="374" size="+10" color="333333" text="i" italic="1" hoverMessage="Info" />
+<image x="18" y="114" image="images/but.png" />
+<object label="downloadButton" x="40" y="116" size="12" color="000000" text="Download" font="Trebuchet MS" bold="1" />
+<object label="purchaseButton" x="72" y="377" size="+5" color="222222" text="$" italic="1" hoverMessage="Purchase" />
+<object label="trackDisplay" x="255" y="30" width="190" size="12" font="Trebuchet MS" />
+<image x="290" y="49" width="150" image="images/bar.png" />
+<object label="loadBar" x="291" y="50" color="dfe3c8" width="148" height="7" /> 
+<object label="timeBar" x="292" y="51" width="146" height="5" color="2222222" />
+<object label="scrollupButton" x="688.5" y="96" scale=".3" color="" alpha="80" /> 
+<object label="scrolldownButton" x="688.5" y="360" scale=".3" color="" alpha="80" /> 
+<object label="scrollButton" x="688" y="108" height="246" color="333333" alpha="" bgAlpha="0" />
+<object label="volumeDisplay" x="169" y="36" width="50" height="12" color="444444" />
+<object label="timeDisplay" x="260" y="46" size="10" font="Arial" />
+<object label="imageDisplay" y="223" width="150" height="148" />
+<object label="videoDisplay" y="223" width="150" height="148" />
+<text x="680" y="6" size="14" text="@" bold="1" hoverMessage="About the Jukebox..." url="http://blog.lacymorrow.com/projects/xspf-jukebox/" />
+<playlist x="155" y="94" width="530" height="276" selectedColor="444444" font="Trebuchet MS" />
+<object label="startButton" width="700" height="400" alpha="0" />
+</objects>
+</skin> 

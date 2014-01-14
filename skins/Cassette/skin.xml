@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?> <skin version="0" xmlns="http://xsml.org/ns/0/"> 
+<width>304</width>
+<height>200</height>
+<name>
+Cassette</name> <author>
+Lacy Morrow</author> 
+<email>
+gojukebox@gmail.com</email> <website>
+http://www.lacymorrow.com</website> <objects>
+<background image="images/default.png" />
+<object label="playButton" x="205" y="146" scale=".5" color="ffffff" />
+<object label="stopButton" x="203" y="50" scale=".5" color="ffffff" hoverMessage="Stop" />
+<object label="prevButton" x="150" y="104" scale=".4" color="ffffff" />
+<object label="fwdButton" x="246" y="104" scale=".4" color="ffffff" />
+<object label="shuffleButton" x="265" y="1" scale=".5" color="222222" hoverMessage="Shuffle" /> 
+<object label="repeatButton" x="244" y="1" scale=".5" color="222222" hoverMessage="Repeat" />
+<object label="infoButton" x="203" y="90" size="+15" color="111111" text="i" font="Trebuchet MS" bold="1" />
+<object label="purchaseButton" x="228" y="-1" color="888888" size="+3" text="$" font="Trebuchet MS" bold="1" hoverMessage="Purchase" />
+<object label="fullTimeDisplay" x="200" y="180" size="10" font="Arial" />
+<object label="trackDisplay" x="8" y="180" width="190" size="10" font="Arial" />
+<object label="timeBar" x="40" y="16" width="217" height="2" color="ffffff" />
+<object label="loadBar" x="40" y="16" width="217" height="2" /> 
+<object label="volumeDisplay" x="256" y="176" width="40" height="18" color="222222" />
+<text x="5" y="1" size="12" text="About..." font="Trebuchet MS" bold="1" hoverMessage="About the Jukebox..." url="http://www.lacymorrow.com" />
+<object label="startButton" width="304" height="200" alpha="0" /></objects></skin> 
