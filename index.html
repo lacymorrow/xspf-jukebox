@@ -31,37 +31,305 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+        <h1>
+<a name="xspf-jukebox" class="anchor" href="#xspf-jukebox"><span class="octicon octicon-link"></span></a>xspf-jukebox</h1>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>The XSPF Jukebox is a fully skinnable Flash media player based on revisions of Fabricio Zuardi's original creation. A full featured media player, the Jukebox supports both <code>mp3</code> audio and <code>flv</code> video parsed through an external <code>XSPF</code> or <code>XML</code> playlist. Custom skins combined with auto-resume and many customization options make the XSPF Jukebox a solid choice for a Flash-based media player.</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<h5>
+<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h5>
+
+<ul>
+<li>  Full Skin Customization</li>
+<li>  Auto-resume when user switches pages</li>
+<li>  Supports <code>mp3</code> audio and <code>flv</code> video</li>
+<li>  Playlist an single-track support</li>
+<li>  Shuffle/Repeat</li>
+<li>  Playlist Caching</li>
+<li>  Plenty of customization options</li>
+<li>  ID3 track meta infomation support</li>
+<li>  Tiny imprint - only 20Kb!</li>
+<li>  Ability to log player usage information</li>
+<li>  Javascript API</li>
+<li>  Includes modified xplay.php to generate playlist automatically</li>
+</ul><h3>
+<a name="easy-install" class="anchor" href="#easy-install"><span class="octicon octicon-link"></span></a>Easy Install</h3>
+
+<h5>
+<a name="1-copy-all-of-the-player-files-to-your-server" class="anchor" href="#1-copy-all-of-the-player-files-to-your-server"><span class="octicon octicon-link"></span></a>1. Copy all of the player files to your server.</h5>
+
+<p>Edit the first line of the <code>xplay.php</code> file to point to your media directory:</p>
+
+<p><code>$media = "media"</code></p>
+
+<p>Edit any options you wish, playlist caching is turned on by default.</p>
+
+<h5>
+<a name="2-include-the-swfobject-javascript-code-into-your-page-head" class="anchor" href="#2-include-the-swfobject-javascript-code-into-your-page-head"><span class="octicon octicon-link"></span></a>2. Include the <a href="http://code.google.com/p/swfobject/">SWFObject</a> javascript code into your page <code>&lt;head&gt;</code>:</h5>
+
+<p><code>&lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"&gt;&lt;/script&gt;</code></p>
+
+<h5>
+<a name="3-create-a-div-to-hold-your-content" class="anchor" href="#3-create-a-div-to-hold-your-content"><span class="octicon octicon-link"></span></a>3. Create a <code>&lt;div&gt;</code> to hold your content:</h5>
+
+<p><code>&lt;div id="flashcontent"&gt;
+      &lt;!-- this will be replaced --&gt;
+  &lt;/div&gt;</code></p>
+
+<h5>
+<a name="4-invoke-the-player-via-javascriptscriptvar-params--paramswmodetransparentparamsallowscriptaccessalwaysswfobjectembedswfxspf_jukeboxswfplaylist_urlxplayphpskin_urlskinsitunesparam1valueparam2valueflashcontent-skin-width-skin-height-700---params-script" class="anchor" href="#4-invoke-the-player-via-javascriptscriptvar-params--paramswmodetransparentparamsallowscriptaccessalwaysswfobjectembedswfxspf_jukeboxswfplaylist_urlxplayphpskin_urlskinsitunesparam1valueparam2valueflashcontent-skin-width-skin-height-700---params-script"><span class="octicon octicon-link"></span></a>4. Invoke the player via javascript:<h5></h5>
+
+<pre><code>&lt;script&gt;
+var params = {};
+params.wmode="transparent";
+params.allowscriptaccess="always";
+swfobject.embedSWF("xspf_jukebox.swf?playlist_url=xplay.php&amp;skin_url=skins/iTunes[&amp;param1=value&amp;param2=value...]","flashcontent", "skin width", "skin height", "7.0.0", "", {}, params, {});
+&lt;/script&gt;
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+</h5><p>Notice the values highlighted above, you must specify valid file paths for both the <code>playlist_url</code> and <code>skin_url</code> as well as the skin <code>width</code> and <code>height</code>. You may also specify any of the optional parameters following the <code>playlist_url</code>. For example:</p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<p>The entire url for the .swf on the demo page is:</p>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<pre><code>xspf_jukebox.swf?playlist_url=xplay.php&amp;skin_url=skins/iTunes&amp;autoplay=true&amp;alphabetize=true&amp;autoload=true&amp;autoresume=true&amp;main_image=images/artwork.jpg&amp;shuffle=true&amp;statsurl=stats.php
+</code></pre>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<p>That's it! The XSPF Jukebox is now installed.</p>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<h5>
+<a name="single-track-mode" class="anchor" href="#single-track-mode"><span class="octicon octicon-link"></span></a>Single track mode</h5>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<p>You can also use the Jukebox to play a single .mp3 or .flv file, using the following two parameters in place of playlist_url:</p>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<ul>
+<li>  <code>track_title</code> : label of track</li>
+<li>  <code>track_url</code> : url of track</li>
+</ul><h5>
+<a name="optional-parameters" class="anchor" href="#optional-parameters"><span class="octicon octicon-link"></span></a>Optional Parameters</h5>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<ul>
+<li>  <code>playlist_url</code> : the url of the xspf file to load</li>
+<li>  <code>skin_url</code> : url of the skin folder</li>
+<li>  <code>loadurl</code> : url linking to a text file containing all variables. cuts down on html coding and file sizes, one file can be used by many players</li>
+<li>  <code>activeDownload</code> : boolean value to allow or disallow direct downloads of tracks, default is false</li>
+<li>  <code>alphabetize</code> : boolean value to alphabetize playlist, default is false</li>
+<li>  <code>autoload</code> : boolean value that makes the playlist load without the initial user click, default is false</li>
+<li>  <code>autoplay</code> : boolean value that makes the playlist load and the music start without the initial user click, default is false</li>
+<li>  <code>autoresume</code> : boolean value that allows players on multiple pages to seamlessly continue music as a user browses pages, default is false</li>
+<li>  <code>buffer</code> : seconds to preload video before playing, exclude for automatic</li>
+<li>  <code>crossFade</code> : either a boolean value, which when true is set to the default time, or the number of seconds to fade (1-12), default is 6 seconds</li>
+<li>  <code>forceAlphabetize</code> : boolean value, forces full alphabetizing, including preceding 'the' in artist title, default is false</li>
+<li>  <code>format</code> : text to format track label, use "-creator, "-title, "-location, and "-annotation to insert respective values, default is "-creator : -title</li>
+<li>  <code>gotoany</code> : boolean value that forces travel to unknown URLs, default is false</li>
+<li>  <code>image</code> : url for a jpg image that is shown when autoplay is off</li>
+<li>  <code>infourl</code> : global info url for all songs, fills absent playlist info urls</li>
+<li>  <code>load_message</code> : message displayed after autoload</li>
+<li>  <code>main_image</code> : global image url, fills absent playlist images</li>
+<li>  <code>mainurl</code> : right-click » "about" url</li>
+<li>  <code>midChar</code> : character placed to separate creator and title values for tracks, overwritten by format, default is ":</li>
+<li>  <code>no_continue</code> : boolean value to turn off automatic song changing, default is false</li>
+<li>  <code>player_title</code> : title text, default is "Xspf Jukebox</li>
+<li>  <code>repeat</code> : boolean value to set repeat, default is false</li>
+<li>  <code>repeat_playlist</code> : boolean value to repeat the playlist, default is true</li>
+<li>  <code>shuffle</code> : boolean value to set shuffle, default is false</li>
+<li>  <code>start_track</code> : track number for beginning track, default is 1</li>
+<li>  <code>statsurl</code> : url to an external script that can collect POST values. Can collect playSong and annotation</li>
+<li>  <code>timedisplay</code> : numerical value to show time counter; 0: off, 1: all, 2: elapsed, 3: duration, 4: countdown</li>
+<li>  <code>trackNumber</code> : boolean value that adds track numbers to labels, default is false</li>
+<li>  <code>useId3</code> : boolean value that forces id3 tag use, default is false</li>
+<li>  <code>volume_level</code> : starting volume level percent, default is 100</li>
+</ul><h5>
+<a name="playlist-format" class="anchor" href="#playlist-format"><span class="octicon octicon-link"></span></a>Playlist Format</h5>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<p>The XSPF Jukebox uses the <a href="http://xspf.org">XSPF (‘spiff’)</a> open XML playlist format. A brief example follows:</p>
+
+<pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;playlist version="0" xmlns="http://xspf.org/ns/0/"&gt;
+    &lt;trackList&gt;
+        &lt;track&gt;
+            &lt;location&gt;url of .mp3 audio or .flv video file&lt;/location&gt;
+            &lt;creator&gt;artist or creator of track&lt;/creator&gt;
+            &lt;title&gt;title of track&lt;/title&gt;
+            &lt;annotation&gt;used in place of creator/title if both are absent&lt;/annotation&gt;
+            &lt;duration&gt;number of milliseconds of track duration&lt;/duration&gt;
+            &lt;info&gt;url of info link&lt;/info&gt;
+            &lt;image&gt;url of image, overwrites main_image parameter&lt;/image&gt;
+            &lt;purchase&gt;url of purchase link&lt;/purchase&gt;
+        &lt;/track&gt;
+    &lt;/trackList&gt;
+&lt;/playlist&gt;
+</code></pre>
+
+<h6>
+<a name="note-only-location-is-required" class="anchor" href="#note-only-location-is-required"><span class="octicon octicon-link"></span></a>NOTE: only <code>&lt;location&gt;</code> is required</h6>
+
+<h5>
+<a name="javascript-api" class="anchor" href="#javascript-api"><span class="octicon octicon-link"></span></a>Javascript API</h5>
+
+<p>A javascript interface has been added into the player to allow for extended control over the Jukebox. This feature only applies to the Flash 8 version.
+Available functions are:</p>
+
+<ul>
+<li>  <code>playTrack()</code> : play/pause the track</li>
+<li>  <code>stopTrack()</code> : stop the track</li>
+<li>  <code>nextTrack()</code> : advance to the next track</li>
+<li>  <code>prevTrack()</code> : go back to the previous track</li>
+<li>  <code>shuffleToggle()</code> : turn shuffle on/off</li>
+<li>  <code>repeatToggle()</code> : turn repeat on/off</li>
+<li>  <code>gotoTrack(track number)</code> : play a specified track</li>
+<li>  <code>addTrack(track id, location, title, creator, info url, purchase url, image, annotation)</code> : add a track to the playlist</li>
+</ul><p>To control the Jukebox using Javascript, make sure that you have an id set in the object and embed tags for the embed script. To call a function, use the format: </p>
+
+<p><code>window.document.xspfJukebox.playTrack();</code></p>
+
+<p>For example:</p>
+
+<p><code>&lt;a href="javascript:window.document.xspfJukebox.playTrack();"&gt;Click to Play &lt;/a&gt;</code></p>
+
+<hr><h1>
+<a name="skin-documentation" class="anchor" href="#skin-documentation"><span class="octicon octicon-link"></span></a>Skin Documentation</h1>
+
+<p>The XSPF Jukebox uses a custom XML format to specify the player appearance. The skin.xml files are in the following format:</p>
+
+<pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;skin version="0" xmlns="http://xsml.org/ns/0/"&gt;
+    &lt;name&gt;skin name&lt;/name&gt;
+    &lt;width&gt;skin width&lt;/width&gt;
+    &lt;height&gt;skin height&lt;/height&gt;
+    &lt;author&gt;skin author&lt;/author&gt;
+    &lt;email&gt;author?s email&lt;/email&gt;
+    &lt;website&gt;author?s website&lt;/website&gt;
+    &lt;comment&gt;author?s comments&lt;/comment&gt;
+    &lt;object&gt;
+           all skin objects reside between the &lt;object&gt; tags
+    &lt;/object&gt;
+&lt;/skin&gt;
+</code></pre>
+
+<h5>
+<a name="skin-objects" class="anchor" href="#skin-objects"><span class="octicon octicon-link"></span></a>Skin Objects</h5>
+
+<ul>
+<li>  <code>&lt;background x="" y="" width="" height="" scale="" image="" shape="" border="" color="" borderColor="" alpha="" /&gt;</code>
+</li>
+<li>  <code>&lt;image x="" y="" z="" width="" height="" image="" alpha="" url="" target="" hoverMessage="" /&gt;</code>
+</li>
+<li>  <code>&lt;shape x="" y="" z="" width="" height="" shape="" border="" color="" borderColor="" alpha="" url="" target="" hoverMessage="" /&gt;</code>
+</li>
+<li>  <code>&lt;text x="" y="" z="" size="" color="" font="" text="" border="" bold="" italic="" underline="" alpha="" url="" target="" hoverMessage="" /&gt;</code>
+</li>
+<li>  <code>&lt;playlist x="" y="" z="" width="" height="" size="" color="" font="" selectedColor="" bold="" italic="" underline="" alpha="" hoverMessage="" /&gt;</code>
+</li>
+<li>  <code>&lt;badge x="" y="" width="" height="" /&gt;</code>
+</li>
+</ul><h5>
+<a name="function-objects" class="anchor" href="#function-objects"><span class="octicon octicon-link"></span></a>Function Objects</h5>
+
+<p>All function objects begin with an  tag, and are distinguished through a <code>label</code> attribute. Most labels have similar attributes, but there are some slight differences.</p>
+
+<ul>
+<li>  <code>&lt;object label="playButton" x="" y="" z="" width="" height="" scale="" image="" color="" alpha="" hoverMessage="" /&gt;</code>
+</li>
+<li>  <code>&lt;object label="playpauseButton" x="" y="" z="" width="" height="" scale="" image="" color="" alpha="" hoverMessage="" /&gt;</code>
+</li>
+<li>  <code>&lt;object label="stopButton" x="" y="" z="" width="" height="" scale="" image="" color="" alpha="" hoverMessage="" /&gt;</code>
+</li>
+<li>  <code>&lt;object label="prevButton" x="" y="" z="" width="" height="" scale="" image="" color="" alpha="" hoverMessage="" /&gt;</code>
+</li>
+<li>  <code>&lt;object label="fwdButton" x="" y="" z="" width="" height="" scale="" image="" color="" alpha="" hoverMessage="" /&gt;</code>
+</li>
+<li>  <code>&lt;object label="shuffleButton" x="" y="" z="" width="" height="" scale="" image="" color="" alpha="" hoverMessage="" /&gt;</code>
+</li>
+<li>  <code>&lt;object label="repeatButton" x="" y="" z="" width="" height="" scale="" image="" color="" alpha="" hoverMessage="" /&gt;</code>
+</li>
+<li>  <code>&lt;object label="scrollButton" x="" y="" z="" width="" height="" scale="" image="" color="" bgColor="" alpha="" bgAlpha="" hoverMessage="" /&gt;</code>
+</li>
+<li>  <code>&lt;object label="scrollupButton" x="" y="" z="" width="" height="" scale="" image="" color="" alpha="" hoverMessage="" /&gt;</code>
+</li>
+<li>  <code>&lt;object label="scrolldownButton" x="" y="" z="" width="" height="" scale="" image="" color="" alpha="" hoverMessage="" /&gt;</code>
+</li>
+<li>  <code>&lt;object label="startButton" x="" y="" z="" width="" height="" scale="" color="" alpha="" hoverMessage="" /&gt;</code>
+</li>
+<li>  <code>&lt;object label="infoButton" x="" y="" z="" size="" color="" font="" text="" bold="" italic="" underline="" target="" hoverMessage="" /&gt;</code>
+</li>
+<li>  <code>&lt;object label="purchaseButton" x="" y="" z="" size="" color="" font="" text="" bold="" italic="" underline="" target="" hoverMessage="" /&gt;</code>
+</li>
+<li>  <code>&lt;object label="downloadButton" x="" y="" z="" size="" color="" font="" text="" bold="" italic="" underline="" target="" hoverMessage="" /&gt;</code>
+</li>
+<li>  <code>&lt;object label="playDisplay" x="" y="" z="" width="" height="" scale="" color="" alpha="" hoverMessage="" /&gt;</code>
+</li>
+<li>  <code>&lt;object label="imageDisplay" x="" y="" z="" width="" height="" scale="" color="" alpha="" hoverMessage="" /&gt;</code>
+</li>
+<li>  <code>&lt;object label="videoDisplay" x="" y="" z="" width="" height="" scale="" alpha="" hoverMessage="" /&gt;</code>
+</li>
+<li>  <code>&lt;object label="trackDisplay" x="" y="" z="" width="" size="" color="" font="" text="" align="" bold="" italic="" underline="" hoverMessage="" /&gt;</code>
+</li>
+<li>  <code>&lt;object label="timeDisplay" x="" y="" z="" size="" color="" font="" text="" bold="" italic="" underline="" hoverMessage="" /&gt;</code>
+</li>
+<li>  <code>&lt;object label="fulltimeDisplay" x="" y="" z="" size="" color="" font="" text="" bold="" italic="" underline="" hoverMessage="" /&gt;</code>
+</li>
+<li>  <code>&lt;object label="volumeDisplay" x="" y="" z="" width="" height="" scale="" image="" color="" alpha="" hoverMessage="" /&gt;</code>
+</li>
+<li>  <code>&lt;object label="timeBar" x="" y="" z="" width="" height="" scale="" image="" color="" alpha="" hoverMessage="" /&gt;</code>
+</li>
+<li>  <code>&lt;object label="loadBar" x="" y="" z="" width="" height="" scale="" image="" color="" alpha="" hoverMessage="" /&gt;</code>
+</li>
+</ul><h5>
+<a name="labels" class="anchor" href="#labels"><span class="octicon octicon-link"></span></a>Labels</h5>
+
+<ul>
+<li>  <code>playButton</code> : a play button, toggles between play and pause</li>
+<li>  <code>playpauseButton</code> : a static play pause button, toggles between play and pause</li>
+<li>  <code>stopButton</code> : a stop button, stops the track</li>
+<li>  <code>prevButton</code> : a previous button, changes to the previous track</li>
+<li>  <code>fwdButton</code> : a forward button, changes to the next track</li>
+<li>  <code>shuffleButton</code> : a shuffle button, toggles on/off</li>
+<li>  <code>repeatButton</code> : a repeat button, toggles on/off</li>
+<li>  <code>scrollButton</code> : a scroll button with background, scrolls playlist</li>
+<li>  <code>scrollupButton</code> : an up arrow, scrolls playlist up</li>
+<li>  <code>scrolldownButton</code> : a down arrow, scrolls playlist down</li>
+<li>  <code>startButton</code> : a rectangle to indicate click location to start load or play, set alpha to 0</li>
+<li>  <code>infoButton</code> : text button to follow the current info link in a playlist</li>
+<li>  <code>purchaseButton</code> : text button to follow the current purchase link in a playlist</li>
+<li>  <code>downloadButton</code> : text button to directly link to the currently playing mp3</li>
+<li>  <code>playDisplay</code> : displays current track images</li>
+<li>  <code>imageDisplay</code> : displays current track images</li>
+<li>  <code>videoDisplay</code> : displays video tracks</li>
+<li>  <code>trackDisplay</code> : displays currently playing track</li>
+<li>  <code>timeDisplay</code> : displays current track time in a standard format 00:00, toggles between time, duration, and time remaining</li>
+<li>  <code>fulltimeDisplay</code> : displays current track time in a full format 00:00/00:00, displays time and duration</li>
+<li>  <code>volumeDisplay</code> : displays a volume bar to change track volume</li>
+<li>  <code>timeBar</code> : displays current track percentage in bar form, click to scan track</li>
+<li>  <code>loadBar</code> : displays loaded percentage for the current track in bar form</li>
+</ul><h5>
+<a name="attributes" class="anchor" href="#attributes"><span class="octicon octicon-link"></span></a>Attributes</h5>
+
+<ul>
+<li>  <code>x</code> : number : the x value or percentage for placing an object</li>
+<li>  <code>y</code> : number : the y value or percentage for placing an object</li>
+<li>  <code>z</code> : number : the z value, or depth of an object.</li>
+<li>  <code>width</code> : number : the width of an object</li>
+<li>  <code>height</code> : number : the height of an object</li>
+<li>  <code>scale</code> : number : used in place of width/height. scales the object while retaining default aspect ratio. 1 = no scaling</li>
+<li>  <code>size</code> : number : font size. size must be preceded by a + for infoButton, purchaseButton, and downloadButton. ex: +15</li>
+<li>  <code>image</code> : url : load an image in place of the default symbol</li>
+<li>  <code>shape</code> : rectangle/rectRounded/circle/triangle : draws a shape for an object</li>
+<li>  <code>border</code> : number : defines a shape?s border width</li>
+<li>  <code>color</code> : hex code : sets the color of an object. ex: ff0088</li>
+<li>  <code>borderColor</code> : hex code : sets the color of an shape?s border</li>
+<li>  <code>bgColor</code> : hex code : sets the color of an object?s background</li>
+<li>  <code>selectedColor</code> : hex code : sets the color of the current track in the playlist</li>
+<li>  <code>font</code> : font name : sets the text font</li>
+<li>  <code>text</code> : text : displayed text</li>
+<li>  <code>align</code> : left/center/right : used only for trackDisplay. aligns text</li>
+<li>  <code>bold</code> : boolean : sets text bolding on/off</li>
+<li>  <code>italic</code> : boolean : sets text italics on/off</li>
+<li>  <code>underline</code> : boolean : sets text underline on/off</li>
+<li>  <code>alpha</code> : percent : sets alpha channel of object</li>
+<li>  <code>bgAlpha</code> : percent : sets alpha channel of an object?s background</li>
+<li>  <code>url</code> : url : allows an object to link to a web page</li>
+<li>  <code>hoverMessage</code> : text : message displayed on mouse over</li>
+</ul>
       </section>
     </div>
 
