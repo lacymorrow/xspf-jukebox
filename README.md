@@ -6,7 +6,7 @@ The XSPF Jukebox is a fully skinnable Flash media player. Based on my revisions 
 ##### Features
 
 *   Full Skin Customization
-*   Auto-resume when user switches pages
+*   Auto-resume when user switches pages (go ahead, refresh the page to try it out!)
 *   Supports `.mp3` audio and `.flv` video
 *   Playlist an single-track support
 *   Shuffle/Repeat
