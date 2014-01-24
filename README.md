@@ -18,6 +18,8 @@ The XSPF Jukebox is a fully skinnable Flash media player. Based on my revisions 
 *   Javascript API
 *   Includes modified xplay.php to generate playlist automatically
 
+###[DEMO](http://www.lacymorrow.com/projects/xspf)
+
 ### Easy Install
 
 ##### 1. Copy all of the player files to your server. 
