@@ -2,7 +2,8 @@ xspf-jukebox
 ============
 
 # Documentation
-***
+
+
 ### Easy Install
 
 ##### 1. Copy all of the player files to your server. 
@@ -45,7 +46,6 @@ You can also use the Jukebox to play a single .mp3 or .flv file, using the follo
 *   `track_title` : label of track
 *   `track_url` : url of track
 
-* * *
 
 ##### Optional Parameters
 
