@@ -1,8 +1,6 @@
 xspf-jukebox
 ============
 
-# Documentation
-
 
 ### Easy Install
 
@@ -36,7 +34,7 @@ The entire url for the .swf on the demo page is:
 
     xspf_jukebox.swf?playlist_url=xplay.php&skin_url=skins/iTunes&autoplay=true&alphabetize=true&autoload=true&autoresume=true&main_image=images/artwork.jpg&shuffle=true&statsurl=stats.php
 
-That&rsquo;s it! The XSPF Jukebox is now installed.
+That's it! The XSPF Jukebox is now installed.
 
 
 ##### Single track mode
@@ -201,8 +199,8 @@ All function objects begin with an <object> tag, and are distinguished through a
 *   `imageDisplay` : displays current track images
 *   `videoDisplay` : displays video tracks
 *   `trackDisplay` : displays currently playing track
-*   `timeDisplay` : displays current track time in a standard format ?00:00?, toggles between time, duration, and time remaining
-*   `fulltimeDisplay` : displays current track time in a full format ?00:00/00:00?, displays time and duration
+*   `timeDisplay` : displays current track time in a standard format 00:00, toggles between time, duration, and time remaining
+*   `fulltimeDisplay` : displays current track time in a full format 00:00/00:00, displays time and duration
 *   `volumeDisplay` : displays a volume bar to change track volume
 *   `timeBar` : displays current track percentage in bar form, click to scan track
 *   `loadBar` : displays loaded percentage for the current track in bar form
@@ -214,7 +212,7 @@ All function objects begin with an <object> tag, and are distinguished through a
 *   `z` : number : the z value, or depth of an object.
 *   `width` : number : the width of an object
 *   `height` : number : the height of an object
-*   `scale` : number : used in place of width/height. scales the object while retaining default aspect ratio. 1 equals no scale
+*   `scale` : number : used in place of width/height. scales the object while retaining default aspect ratio. 1 = no scaling
 *   `size` : number : font size. size must be preceded by a + for infoButton, purchaseButton, and downloadButton. ex: +15
 *   `image` : url : load an image in place of the default symbol
 *   `shape` : rectangle/rectRounded/circle/triangle : draws a shape for an object
