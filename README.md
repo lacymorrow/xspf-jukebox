@@ -249,3 +249,8 @@ All function objects begin with an <object> tag, and are distinguished through a
 *   `bgAlpha` : percent : sets alpha channel of an object?s background
 *   `url` : url : allows an object to link to a web page
 *   `hoverMessage` : text : message displayed on mouse over
+
+
+## License
+
+[MIT](http://opensource.org/licenses/MIT) © [Lacy Morrow](http://lacymorrow.com)
