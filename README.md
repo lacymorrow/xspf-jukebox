@@ -1,7 +1,8 @@
-xspf-jukebox
+XSPF-Jukebox
 ============
 
-#### As of 2014 this project is no longer being maintained. It still works great and is in use in may places. If you would like to take over, please get in touch with me.
+#### As of 2014 this project is no longer being maintained. It still works great and is in use in may places.   
+#### If you would like to take over, please get in touch with me.
 
 
 
@@ -22,7 +23,7 @@ The XSPF Jukebox is a fully skinnable Flash media player. Based on my revisions 
 *   Javascript API
 *   Includes modified xplay.php to generate playlist automatically
 
-###[DEMO](http://www.lacymorrow.com/projects/xspf)
+### [DEMO](http://www.lacymorrow.com/projects/xspf)
 
 ### Easy Install
 
@@ -37,9 +38,11 @@ Edit any options you wish, playlist caching is turned on by default.
 `<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>`
 
 ##### 3. Create a `<div>` to hold your content:
- `<div id="flashcontent">
+ ```html
+  <div id="flashcontent">
       <!-- this will be replaced -->
-  </div>`
+  </div>
+  ```
   
 ##### 4. Invoke the player via javascript:<h5>
 
