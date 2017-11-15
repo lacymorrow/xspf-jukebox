@@ -257,6 +257,9 @@ All function objects begin with an <object> tag, and are distinguished through a
 *   `url` : url : allows an object to link to a web page
 *   `hoverMessage` : text : message displayed on mouse over
 
+#### Uses two plugins for processing filesyste:
+ * lacymorrow/xspf-playlister-py
+ * [lacymorrow/xspf-playlisster.php](php)
 
 ## License
 
