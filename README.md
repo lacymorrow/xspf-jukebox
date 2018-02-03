@@ -281,9 +281,9 @@ All function objects begin with an <object> tag, and are distinguished through a
 *   `hoverMessage` : text : message displayed on mouse over
 
 ## Generating an XSPF Playlist:
- * [lacymorrow/xspf-playlist](lacymorrow/xspf-playlist)
- * [lacymorrow/xspf-playlister-py](lacymorrow/xspf-playlister-py)
- * [lacymorrow/xspf-playlisster.php](lacymorrow/xspf-playlister-php)
+ * [lacymorrow/xspf-playlist](https://github.com/lacymorrow/xspf-playlist)
+ * [lacymorrow/xspf-playlister-py](https://github.com/lacymorrow/xspf-playlister-py)
+ * [lacymorrow/xspf-playlisster.php](https://github.com/lacymorrow/xspf-playlister-php)
 
 ## License
 
