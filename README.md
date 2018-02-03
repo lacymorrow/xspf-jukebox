@@ -1,5 +1,8 @@
 [![xspf-jukebox](images/logo.png)]()
 ===
+
+> A skinnable, customizeable Flash media player.
+
 [![license:mit](https://img.shields.io/badge/license-mit-blue.svg)](https://opensource.org/licenses/MIT)
 
 ### [Live demo of the XSPF Jukebox](http://www.lacymorrow.com/projects/xspf)
