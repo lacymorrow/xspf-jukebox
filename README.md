@@ -1,5 +1,5 @@
-XSPF-Jukebox
-============
+[![xspf-jukebox](images/logo.png)]()
+
 
 #### As of 2014 this project is no longer being maintained. It still works great and is in use in many places.   
 #### If you would like to take over, please get in touch with me.
