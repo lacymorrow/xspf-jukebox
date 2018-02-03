@@ -5,11 +5,11 @@
 
 The XSPF Jukebox is a fully skinnable Flash media player. Based on my revisions of Fabricio Zuardi's original creation. A full featured media player, the Jukebox supports both mp3 audio and flv video parsed through an external .XSPF or .XML playlist. Custom skins combined with auto-resume and many customizable options make the XSPF Jukebox a solid choice for a Flash-based media player.
 
-##### As of 2014 this project is no longer being maintained. It is considered to be in a stable state and will receive no further updates.
-##### If you would like to take over, please file an issue.
+### [DEMO](http://www.lacymorrow.com/projects/xspf)
 
 
-
+###### As of 2014 this project is no longer being maintained. It is considered to be in a stable state and will receive no further updates.
+###### If you would like to take over, please file an issue.
 
 ##### Features
 
@@ -26,7 +26,6 @@ The XSPF Jukebox is a fully skinnable Flash media player. Based on my revisions 
 *   Javascript API
 *   Includes modified xplay.php to generate playlist automatically
 
-### [DEMO](http://www.lacymorrow.com/projects/xspf)
 
 ### Easy Install
 
