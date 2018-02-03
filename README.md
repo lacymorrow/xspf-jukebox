@@ -2,34 +2,50 @@
 ===
 [![license:mit](https://img.shields.io/badge/license-mit-blue.svg)](https://opensource.org/licenses/MIT)
 
-
-The XSPF Jukebox is a fully skinnable Flash media player. Based on my revisions of Fabricio Zuardi's original creation. A full featured media player, the Jukebox supports both mp3 audio and flv video parsed through an external .XSPF or .XML playlist. Custom skins combined with auto-resume and many customizable options make the XSPF Jukebox a solid choice for a Flash-based media player.
-
 ### [Live demo of the XSPF Jukebox](http://www.lacymorrow.com/projects/xspf)
 
 _You must have flash installed!_
+
+The XSPF Jukebox is a fully skinnable Flash media player. Based on my revisions of Fabricio Zuardi's original creation. A full featured media player, the Jukebox supports both mp3 audio and flv video parsed through an external .XSPF or .XML playlist. Custom skins combined with auto-resume and many customizable options make the XSPF Jukebox a solid choice for a Flash-based media player.
 
 
 ###### As of 2014 this project is no longer being maintained. It is considered to be in a stable state and will receive no further updates.
 ###### If you would like to take over, please file an issue.
 
-##### Features
+# Features
 
-*   Full Skin Customization
-*   Auto-resume when user switches pages (go ahead, refresh the page to try it out!)
-*   Supports `.mp3` audio and `.flv` video
-*   Playlist an single-track support
-*   Shuffle/Repeat
-*   Playlist Caching
-*   Many customizeable options
-*   ID3 track meta infomation support
-*   Tiny imprint - only 20Kb!
-*   Ability to log player usage information
-*   Javascript API
-*   Includes modified xplay.php to generate playlist automatically
+* Fully customizable skins
+* Auto-resume when user switches pages (go ahead, refresh the page to try it out!)
+* Supports `.mp3` audio and `.flv` video
+* Playlist an single-track support
+* Shuffle/Repeat
+* Playlist caching
+* Many customizeable options
+* ID3 track meta infomation support
+* Tiny imprint - only 20Kb!
+* Ability to log player usage information
+* Full Javascript API
+* Includes modified xplay.php to generate playlist automatically
 
 
-### Easy Install
+# Table of Contents
+
+* [Install](#install)
+* [Jukebox Options](#options)
+  * [Single-track Mode](#single-track-mode)
+  * [Optional Parameters](#optional-parameters)
+  * [XSPF Playlist Format](#playlist-format)
+  * [JavaScript API](#javascript-api)
+* [Skinning the Jukebox](#skin-documentation)
+  * [Skin Objects](#skin-objects)
+  * [Function Objects](#function-objects)
+  * [Labels](#labels)
+  * [Attributes](#attributes)
+* [XSPF Playlists](#generating-an-xspf-playlist)
+* [License](#license)
+
+
+# Install
 
 ##### 1. Copy all of the player files to your server. 
 Edit the first line of the `xplay.php` file to point to your media directory:
@@ -66,7 +82,11 @@ The entire url for the .swf on the demo page is:
 That's it! The XSPF Jukebox is now installed.
 
 
-##### Single track mode
+# Options
+
+The XSPF Jukebox can be customized for almost any need to play audio or video on the web.
+
+##### Single-track mode
 
 You can also use the Jukebox to play a single .mp3 or .flv file, using the following two parameters in place of playlist_url:
 
@@ -151,7 +171,6 @@ For example:
 
 `<a href="javascript:window.document.xspfJukebox.playTrack();">Click to Play </a>`
 
-* * *
 
 # Skin Documentation
 
@@ -261,9 +280,10 @@ All function objects begin with an <object> tag, and are distinguished through a
 *   `url` : url : allows an object to link to a web page
 *   `hoverMessage` : text : message displayed on mouse over
 
-#### Uses two plugins for processing filesyste:
- * lacymorrow/xspf-playlister-py
- * [lacymorrow/xspf-playlisster.php](php)
+## Generating an XSPF Playlist:
+ * [lacymorrow/xspf-playlist](lacymorrow/xspf-playlist)
+ * [lacymorrow/xspf-playlister-py](lacymorrow/xspf-playlister-py)
+ * [lacymorrow/xspf-playlisster.php](lacymorrow/xspf-playlister-php)
 
 ## License
 
