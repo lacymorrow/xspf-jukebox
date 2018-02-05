@@ -69,18 +69,25 @@ Edit any options you wish, playlist caching is turned on by default.
   
 ##### 4. Invoke the player via javascript:<h5>
 
-    <script>
+```js
+<script>
     var params = {};
     params.wmode="transparent";
     params.allowscriptaccess="always";
-    swfobject.embedSWF("xspf_jukebox.swf?playlist_url=xplay.php&skin_url=skins/iTunes[&param1=value&param2=value...]","flashcontent", "skin width", "skin height", "7.0.0", "", {}, params, {});
-    </script>
+    
+    swfobject.embedSWF("xspf_jukebox.swf
+      ?playlist_url=xplay.php
+      &skin_url=skins/iTunes
+      &param1=value", "flashcontent", "skin width", "skin height", "7.0.0", "", {}, params, {});
+</script>
+```
 
 Notice the values highlighted above, you must specify valid file paths for both the `playlist_url` and `skin_url` as well as the skin `width` and `height`. You may also specify any of the optional parameters following the `playlist_url`. For example:
 
 The entire url for the .swf on the demo page is:
-
-    xspf_jukebox.swf?playlist_url=xplay.php&skin_url=skins/iTunes&autoplay=true&alphabetize=true&autoload=true&autoresume=true&main_image=images/artwork.jpg&shuffle=true&statsurl=stats.php
+```js
+xspf_jukebox.swf?playlist_url=xplay.php&skin_url=skins/iTunes&autoplay=true&alphabetize=true&autoload=true&autoresume=true&main_image=images/artwork.jpg&shuffle=true&statsurl=stats.php
+```
 
 That's it! The XSPF Jukebox is now installed.
 
