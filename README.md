@@ -1,5 +1,5 @@
 [![xspf-jukebox](images/logo.png)]()
-===
+====
 
 > A skinnable, customizeable Flash media player.
 
