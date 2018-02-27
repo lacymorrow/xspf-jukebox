@@ -75,10 +75,8 @@ Edit any options you wish, playlist caching is turned on by default.
     params.wmode="transparent";
     params.allowscriptaccess="always";
     
-    swfobject.embedSWF("xspf_jukebox.swf
-      ?playlist_url=xplay.php
-      &skin_url=skins/iTunes
-      &param1=value", "flashcontent", "skin width", "skin height", "7.0.0", "", {}, params, {});
+    var url = "xspf_jukebox.swf?playlist_url=xplay.php&skin_url=skins/iTunes&param1=value";
+    swfobject.embedSWF(url, "flashcontent", "skin width", "skin height", "7.0.0", "", {}, params, {});
 </script>
 ```
 
