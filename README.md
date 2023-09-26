@@ -291,7 +291,7 @@ All function objects begin with an <object> tag, and are distinguished through a
 ## Generating an XSPF Playlist:
  * [lacymorrow/xspf-playlist](https://github.com/lacymorrow/xspf-playlist)
  * [lacymorrow/xspf-playlister-py](https://github.com/lacymorrow/xspf-playlister-py)
- * [lacymorrow/xspf-playlisster.php](https://github.com/lacymorrow/xspf-playlister-php)
+ * [lacymorrow/xspf-playlister-php](https://github.com/lacymorrow/xspf-playlister-php)
 
 ## License
 
