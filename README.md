@@ -50,7 +50,10 @@ The XSPF Jukebox is a fully skinnable Flash media player. Based on my revisions 
 
 # Install
 
-##### 1. Copy all of the player files to your server. 
+##### 1. Create an XSPF playlist pointing to your media files
+
+> (Optional) Automatically generate your playlists in PHP, Python, or JS
+
 Edit the first line of the `xplay.php` file to point to your media directory:
 
 `$media = "media"`
