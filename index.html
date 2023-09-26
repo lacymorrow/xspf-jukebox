@@ -10,17 +10,17 @@
   <meta name="viewport" content="width=device-width" />
 
   <title>Xspf Jukebox</title>
-  
+
   <!-- Included CSS Files (Uncompressed) -->
   <!--
   <link rel="stylesheet" href="stylesheets/foundation.css">
   -->
-  
+
   <!-- Included CSS Files (Compressed) -->
   <link rel="stylesheet" href="stylesheets/foundation.min.css">
   <link rel="stylesheet" href="stylesheets/app.css">
   <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
 
 </head>
 <body>
@@ -69,7 +69,7 @@
         <h2>XSPF JUKEBOX</h2>
     </div>
   </div>
-  
+
   <div class="row">
     <div class="twelve columns">
       <h4 class="subheader">A fully skinnable, cutomizeable flash media player &mdash; by <a href="http://www.lacymorrow.com/">Lacy Morrow</a></h4>
@@ -77,7 +77,7 @@
       <hr />
     </div>
   </div>
-  
+
   <div class="row">
     <div class="twelve columns">
       <h3 class="pink"><span class="subheader">Current skin: </span>iTunes<a href="http://www.lacymorrow.com/projects/xspf?s=shuffle" class="right small button rounded">Random Skin</a></h3>
@@ -111,7 +111,7 @@ Lacy Morrow
           <li><a href="javascript:window.document.xspfJukebox.prevTrack();">prevTrack();</a></li>
           <li><a href="javascript:window.document.xspfJukebox.nextTrack();">nextTrack();</a></li>
         </div>
-        <div class="six columns">         
+        <div class="six columns">
           <li><a href="javascript:window.document.xspfJukebox.shuffleToggle();">shuffleToggle();</a></li>
           <li><a href="javascript:window.document.xspfJukebox.repeatToggle();">repeatToggle();</a></li>
           <li><a href="javascript:window.document.xspfJukebox.gotoTrack(9);">gotoTrack(9);</a></li>
@@ -136,8 +136,8 @@ Lacy Morrow
           <li>Includes modified xplay.php to generate playlist automatically</li>
     </div>
     </div>
-  </div>   
-  
+  </div>
+
   <div class="row">
     <div class="twelve columns" id="skins">
       <hr />
@@ -145,11 +145,11 @@ Lacy Morrow
       <ul id="skins-list" class="square inline-list"><li><a href="?t=iPodWhite">iPodWhite</a></li><li><a href="?t=SquareOne">SquareOne</a></li><li><a href="?t=VerticalMiniTunes">VerticalMiniTunes</a></li><li><a href="?t=MiniTunes">MiniTunes</a></li><li><a href="?t=Walkmerican">Walkmerican</a></li><li><a href="?t=WinampSmall">WinampSmall</a></li><li><a href="?t=Slim">Slim</a></li><li><a href="?t=OrangeEye">OrangeEye</a></li><li><a href="?t=MiniAMPcast">MiniAMPcast</a></li><li><a href="?t=OrangeEyeSlim">OrangeEyeSlim</a></li><li><a href="?t=SlimCassette">SlimCassette</a></li><li><a href="?t=LezAmp">LezAmp</a></li><li><a href="?t=Wii">Wii</a></li><li><a href="?t=iTunes">iTunes</a></li><li><a href="?t=SlimOriginal">SlimOriginal</a></li><li><a href="?t=SonyWalkman">SonyWalkman</a></li><li><a href="?t=MiniTunesReduced">MiniTunesReduced</a></li><li><a href="?t=mp3music">mp3music</a></li><li><a href="?t=WiiMedia">WiiMedia</a></li><li><a href="?t=Cassette">Cassette</a></li><li><a href="?t=Original">Original</a></li><li><a href="?t=iPodBlack">iPodBlack</a></li><li><a href="?t=Winamp">Winamp</a></li></ul>      <hr />
     </div>
   </div>
-  
+
   <div class="row">
     <div class="twelve columns">
       <h1>Documentation</h1><br />
-      
+
       <h4>Easy&ndash;Install</h4>
       <h5>1. Copy all of the player files to your server. Edit the first line of the xplay.php file to point to your media directory:<h5>
       <p>
@@ -158,12 +158,12 @@ Lacy Morrow
         </code><br />
         Edit any options you wish, playlist cacheing is turned on by default.
       </p>
-      
+
       <h5>2. Include the <a href="http://code.google.com/p/swfobject/" target="_blank">SWFObject</a> javascript code into your page &lt;head&gt;:<h5>
       <p><code>
           &lt;script type=&quot;text/javascript&quot; src=&quot;http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js&quot;&gt;&lt;/script&gt;
       </code></p>
-      
+
       <h5>3. Create a &lt;div&gt; to hold your content:<h5>
       <p>
         <code>
@@ -172,13 +172,13 @@ Lacy Morrow
           &lt;/div&gt;
         </code>
       </p>
-      
+
       <h5>4. Invoke the player via javascript:<h5>
       <p>
         <code>
           &lt;script&gt;<br />
           &nbsp;&nbsp;var params = {};<br />
-          &nbsp;&nbsp;params.wmode=&quot;transparent&quot;;<br /> 
+          &nbsp;&nbsp;params.wmode=&quot;transparent&quot;;<br />
           &nbsp;&nbsp;params.allowscriptaccess=&quot;always&quot;;<br />
           &nbsp;&nbsp;swfobject.embedSWF(&quot;xspf_jukebox.swf?playlist_url=<span class="pink">xplay.php</span>&amp;skin_url=<span class="pink">skins/iTunes
           [&amp;param1=value&amp;param2=value...]</span>&quot;,&quot;<span class="pink">flashcontent</span>&quot;, &quot;<span class="pink">skin width</span>&quot;, &quot;<span class="pink">skin height</span>&quot;, &quot;7.0.0&quot;, &quot;&quot;, {}, params, {});<br />
@@ -193,16 +193,16 @@ Lacy Morrow
       </p>
       <h5>That&rsquo;s it! The XSPF Jukebox is now installed.
       <br />
-      
+
       <h5>Single track mode</h5>
       <p>You can also use the Jukebox to play a single .mp3 or .flv file, using the following two parameters in place of playlist_url:</p>
       <ul class="square">
         <li><code>track_title</code> : label of track</li>
         <li><code>track_url</code> : url of track</li>
       </ul>
-      
+
       <hr />
-      
+
       <h5>Optional Parameters</h5>
       <ul class="square">
         <li><code>playlist_url</code> : the url of the xspf file to load</li>
@@ -258,7 +258,7 @@ Lacy Morrow
       </code></p>
       <p>* only &lt;location&gt; is required</p>
       <br />
-      
+
       <h5>Javascript API</h5>
       <p>A javascript interface has been added into the player to allow for extended control over the Jukebox. This feature only applies to the Flash 8 version.<br />Available functions are:</p>
       <ul class="square">
@@ -275,11 +275,11 @@ Lacy Morrow
       <hr />
     </div>
   </div>
-  
+
   <div class="row">
     <div class="twelve columns">
       <h1>Skin Documentation</h1>
-      <p>The XSPF Jukebox uses a custom XML format to specify the player appearance. The skin.xml files are in the following format:</p>          
+      <p>The XSPF Jukebox uses a custom XML format to specify the player appearance. The skin.xml files are in the following format:</p>
       <p>
         <code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</code><br />
         <code>&lt;skin version=&quot;0&quot; xmlns=&quot;http://xsml.org/ns/0/&quot;&gt;</code><br />
@@ -296,7 +296,7 @@ Lacy Morrow
         <code>&lt;/skin&gt;</code><br />
       </p>
       <br />
-      
+
       <h5>Skin Objects</h5>
       <ul class="square">
         <li><code>&lt;background x=&quot;&quot; y=&quot;&quot; width=&quot;&quot; height=&quot;&quot; scale=&quot;&quot; image=&quot;&quot; shape=&quot;&quot; border=&quot;&quot; color=&quot;&quot; borderColor=&quot;&quot; alpha=&quot;&quot; /&gt;</code></li>
@@ -308,7 +308,7 @@ Lacy Morrow
       </ul>
       <br />
 
-          
+
       <h5>Function Objects</h5>
       <p>All function objects begin with an &lt;object&gt; tag, and are distinguished through a <code>label</code> attribute. Most labels have similar attributes, but there are some slight differences.</p>
       <ul class="square">
@@ -337,7 +337,7 @@ Lacy Morrow
         <li><code>&lt;object label=&quot;loadBar&quot; x=&quot;&quot; y=&quot;&quot; z=&quot;&quot; width=&quot;&quot; height=&quot;&quot; scale=&quot;&quot; image=&quot;&quot; color=&quot;&quot; alpha=&quot;&quot; hoverMessage=&quot;&quot; /&gt;</code></li>
       </ul>
       <br />
-  
+
       <h5>Labels</h5>
       <ul class="square">
         <li><code>playButton</code> : a play button, toggles between play and pause</li>
@@ -396,21 +396,21 @@ Lacy Morrow
 
 
     </div>
-  </div>  
+  </div>
     <script>
        var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-247410-10']);
       _gaq.push(['_trackPageview']);
-    
+
       (function() {
         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
       var params = {};
-      params.wmode="transparent"; 
-      params.allowscriptaccess="always";        
+      params.wmode="transparent";
+      params.allowscriptaccess="always";
       swfobject.embedSWF("xspf_jukebox.swf?playlist_url=http://www.lacymorrow.com/projects/xspf/xplay.php&skin_url=skins/iTunes&autoplay=true&autoload=true&autoresume=true&main_image=images/artwork.jpg&shuffle=true&statsurl=http://www.lacymorrow.com/projects/xspf/stats.php", "xspfJukebox", "700", "400", "7.0.0", "", {}, params, {});
-    </script> 
+    </script>
 </body>
 </html>
