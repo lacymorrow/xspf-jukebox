@@ -1,4 +1,4 @@
-[![xspf-jukebox](images/logo.png)]()
+[![xspf-jukebox]([images/logo.png](https://raw.githubusercontent.com/lacymorrow/xspf-jukebox/master/images/logo.png))](https://github.com/lacymorrow/xspf-jukebox)
 ====
 
 > A skinnable, customizeable Flash media player.
