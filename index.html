@@ -407,10 +407,20 @@ Lacy Morrow
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
+
+			// Get skin param
+			let query = new URL(document.location.toString()).searchParams;
+			let skin = query.get("s");
+
+			if (!skin) {
+				skin = "iTunes";
+			}
+
+			// Embed the XSPF Jukebox
       var params = {};
       params.wmode="transparent";
       params.allowscriptaccess="always";
-      swfobject.embedSWF("xspf_jukebox.swf?playlist_url=http://www.lacymorrow.com/projects/xspf/xplay.php&skin_url=skins/iTunes&autoplay=true&autoload=true&autoresume=true&main_image=images/artwork.jpg&shuffle=true&statsurl=http://www.lacymorrow.com/projects/xspf/stats.php", "xspfJukebox", "700", "400", "7.0.0", "", {}, params, {});
+      swfobject.embedSWF("xspf_jukebox.swf?playlist_url=http://www.lacymorrow.com/projects/xspf/xplay.php&skin_url=skins/" + skin + "&autoplay=true&autoload=true&autoresume=true&main_image=images/artwork.jpg&shuffle=true&statsurl=http://www.lacymorrow.com/projects/xspf/stats.php", "xspfJukebox", "700", "400", "7.0.0", "", {}, params, {});
     </script>
 </body>
 </html>
