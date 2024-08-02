@@ -47,10 +47,6 @@
         <li class="divider"></li>
         <li class="active" ><a href="http://www.lacymorrow.com/projects/xspf/">XSPF Jukebox</a></li>
         <li class="divider"></li>
-        <li ><a href="http://xplayjs.com">xPlay.js</a></li>
-        <li class="divider"></li>
-        <li ><a href="http://www.lacymorrow.com/projects/">Projects</a></li>
-        <li class="divider"></li>
       </ul>
 
       <!-- Right Nav Section -->
@@ -80,8 +76,8 @@
 
   <div class="row">
     <div class="twelve columns">
-      <h3 class="pink"><span class="subheader">Current skin: </span><span id="skin-name">iTunes</span></h3>
-      <div style="width:700px;margin:0 auto;">
+      <h3 class="pink"><span class="subheader">Current skin: </span><span id="skin-name">iTunes</span><a href="http://www.lacymorrow.com/projects/xspf?t=shuffle" class="right small button rounded">Random Skin</a></h3>
+      <div style="width:700px;margin:0 auto;display: grid;align-items: center;justify-content: center;">
         <div id="xspfJukebox">
           <a href="http://www.adobe.com/go/getflashplayer">
             <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
@@ -408,6 +404,36 @@ Lacy Morrow
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
 
+			/*
+
+			*/
+
+			let skins = [
+				"iPodWhite",
+				"SquareOne",
+				"VerticalMiniTunes",
+				"MiniTunes",
+				"Walkmerican",
+				"WinampSmall",
+				"Slim",
+				"OrangeEye",
+				"MiniAMPcast",
+				"OrangeEyeSlim",
+				"SlimCassette",
+				"LezAmp",
+				"Wii",
+				"iTunes",
+				"SlimOriginal",
+				"SonyWalkman",
+				"MiniTunesReduced",
+				"mp3music",
+				"WiiMedia",
+				"Cassette",
+				"Original",
+				"iPodBlack",
+					"Winamp",
+			]
+
 			// Get skin param
 			let query = new URL(document.location.toString()).searchParams;
 			let skin = query.get("t");
@@ -417,7 +443,7 @@ Lacy Morrow
 			}
 
 			if (skin == "shuffle") {
-				skin = "iTunes";
+				skin = skins[Math.floor(Math.random() * skins.length)];
 			}
 
 			document.getElementById("skin-name").innerHTML = skin;
