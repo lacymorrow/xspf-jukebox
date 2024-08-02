@@ -80,7 +80,7 @@
 
   <div class="row">
     <div class="twelve columns">
-      <h3 class="pink"><span class="subheader">Current skin: </span>iTunes<a href="http://www.lacymorrow.com/projects/xspf?s=shuffle" class="right small button rounded">Random Skin</a></h3>
+      <h3 class="pink"><span class="subheader">Current skin: </span><span id="skin-name">iTunes</span></h3>
       <div style="width:700px;margin:0 auto;">
         <div id="xspfJukebox">
           <a href="http://www.adobe.com/go/getflashplayer">
@@ -410,11 +410,17 @@ Lacy Morrow
 
 			// Get skin param
 			let query = new URL(document.location.toString()).searchParams;
-			let skin = query.get("s");
+			let skin = query.get("t");
 
 			if (!skin) {
 				skin = "iTunes";
 			}
+
+			if (skin == "shuffle") {
+				skin = "iTunes";
+			}
+
+			document.getElementById("skin-name").innerHTML = skin;
 
 			// Embed the XSPF Jukebox
       var params = {};
