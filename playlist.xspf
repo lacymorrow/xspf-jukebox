@@ -2,9 +2,10 @@
 <playlist version="1" xmlns="http://xspf.org/ns/0/">
     <trackList>
         <track>
-            <location>./media/alt-j/Deadcrush.mp3</location>
-            <creator>Alt-J</creator>
-            <title>Every Other Freckle</title>
+            <location>/media/streambeats-groovy/Eden_s Leaves.mp3</location>
+            <creator>Harris Heller</creator>
+            <album>Streambeats Groovy</album>
+            <title>Eden's Leaves</title>
             <info>https://lacymorrow.com</info>
         </track>
     </trackList>
